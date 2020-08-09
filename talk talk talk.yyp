@@ -210,7 +210,7 @@
             "Key": "a08a508d-2194-4b52-97b3-6bc20c951bec",
             "Value": {
                 "id": "38a2c099-4629-4571-8ccb-db4dfec0a47a",
-                "resourcePath": "objects\/hand\/hand.yy",
+                "resourcePath": "objects\/hand_obj\/hand_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -218,7 +218,7 @@
             "Key": "a37da69b-5791-4860-a352-32cb7528bfb6",
             "Value": {
                 "id": "c8a2a412-9d0f-46f0-b4c7-f525a2e94d1a",
-                "resourcePath": "objects\/deck\/deck.yy",
+                "resourcePath": "objects\/deck_obj\/deck_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "cff2e1ca-fd52-4b6b-825e-b7920fb32145",
+            "Value": {
+                "id": "947b5543-dc66-4e8f-ad1e-09d7f95d5d0b",
+                "resourcePath": "scripts\/shuffle_discard_in\/shuffle_discard_in.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ed160fe8-2b40-416e-a20d-250ba1b1edcd",
             "Value": {
                 "id": "b305dd91-bcbd-4a8c-84b8-1d0a0893974c",
@@ -306,7 +314,8 @@
     "script_order": [
         "3a476aa1-7a38-45b6-a56b-b55bf40a6b3a",
         "c874e546-3f24-4058-af0d-75b34ca8b9bd",
-        "ed160fe8-2b40-416e-a20d-250ba1b1edcd"
+        "ed160fe8-2b40-416e-a20d-250ba1b1edcd",
+        "cff2e1ca-fd52-4b6b-825e-b7920fb32145"
     ],
     "tutorial": ""
 }

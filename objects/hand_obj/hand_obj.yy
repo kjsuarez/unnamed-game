@@ -1,18 +1,28 @@
 {
-    "id": "a37da69b-5791-4860-a352-32cb7528bfb6",
+    "id": "a08a508d-2194-4b52-97b3-6bc20c951bec",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "deck",
+    "name": "hand_obj",
     "eventList": [
         {
-            "id": "ee7a0140-c2cb-4ca2-b155-7fdb942a64d5",
+            "id": "f256e504-7efe-4bff-975e-986bac166801",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "a37da69b-5791-4860-a352-32cb7528bfb6"
+            "m_owner": "a08a508d-2194-4b52-97b3-6bc20c951bec"
+        },
+        {
+            "id": "9105f14c-a1d0-4b51-a302-dc534fd178e1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "a08a508d-2194-4b52-97b3-6bc20c951bec"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -34,5 +44,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }

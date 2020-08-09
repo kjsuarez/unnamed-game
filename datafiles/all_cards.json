@@ -3,17 +3,20 @@
     {
       "cost": 1,
       "types": ["logos"],
-      "power": 1
+      "power": 1,
+      "face_text": "I'm card #1!"
     },
     {
       "cost": 2,
       "types": ["logos"],
-      "power": 2
+      "power": 2,
+      "face_text": "I'm card #2!"
     },
     {
       "cost": 3,
       "types": ["logos"],
-      "power": 3
+      "power": 3,
+      "face_text": "I'm card #3!"
     }
   ]
 }
