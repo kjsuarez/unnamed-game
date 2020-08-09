@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "cost": 1,
+      "types": ["logos"],
+      "power": 1
+    },
+    {
+      "cost": 2,
+      "types": ["logos"],
+      "power": 2
+    },
+    {
+      "cost": 3,
+      "types": ["logos"],
+      "power": 3
+    }
+  ]
+}
