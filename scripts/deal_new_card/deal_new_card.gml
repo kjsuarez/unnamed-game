@@ -7,7 +7,7 @@
 		shuffle_discard_in();
 	}
 	var metadata = deck_obj.deck_array[| 0];
-	ds_list_insert(deck_obj.discard, 0, metadata);
+	//ds_list_insert(deck_obj.discard, 0, metadata);
 	ds_list_delete(deck_obj.deck_array, 0);
 	
 	
