@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "047a04e7-dc30-4a8e-a8a8-fff3906923f8",
+            "Value": {
+                "id": "c770ea87-fbbf-4a6a-9c5a-ce8d56bbd0e7",
+                "resourcePath": "views\/047a04e7-dc30-4a8e-a8a8-fff3906923f8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1a9a78cd-9599-4bdb-9d72-771a44841a33",
             "Value": {
                 "id": "d3286a97-f992-460a-b1d3-fb5069d3f3aa",
@@ -52,6 +60,14 @@
                 "id": "e0d47ac3-69de-4d35-a9de-5c74e5988fbf",
                 "resourcePath": "views\/1d4b93d7-f725-4b80-b0ca-29f7a0315aa1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1f5f4d1c-9116-4510-93e6-170c5261631a",
+            "Value": {
+                "id": "8aeea525-ad02-4bd1-abc6-8866297316ed",
+                "resourcePath": "scripts\/add_token\/add_token.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -84,6 +100,14 @@
                 "id": "7e61be04-e58c-4864-9b87-f4c8d8e0801f",
                 "resourcePath": "views\/2e74fea3-7cf7-4102-b9a4-bbd2d9ac3cfd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3125db74-b896-42c0-9ad8-58c80ec543f7",
+            "Value": {
+                "id": "99548e71-2674-4d12-acc3-3743207e1f02",
+                "resourcePath": "scripts\/do_damage\/do_damage.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -247,6 +271,14 @@
             }
         },
         {
+            "Key": "adfa6e71-afde-4e94-bc39-add99b5dc17d",
+            "Value": {
+                "id": "22ac2f8e-0879-40d8-a950-deec7f0408c1",
+                "resourcePath": "scripts\/win_condition_met\/win_condition_met.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b87c3ac2-a563-407e-bd32-9e92e2ea63e8",
             "Value": {
                 "id": "4cbc1e36-8d9d-493f-9e8b-f0f21f5a85ef",
@@ -324,7 +356,10 @@
         "c874e546-3f24-4058-af0d-75b34ca8b9bd",
         "ed160fe8-2b40-416e-a20d-250ba1b1edcd",
         "cff2e1ca-fd52-4b6b-825e-b7920fb32145",
-        "96aa98b5-3fbe-4aae-b261-0d87b0083829"
+        "96aa98b5-3fbe-4aae-b261-0d87b0083829",
+        "adfa6e71-afde-4e94-bc39-add99b5dc17d",
+        "3125db74-b896-42c0-9ad8-58c80ec543f7",
+        "1f5f4d1c-9116-4510-93e6-170c5261631a"
     ],
     "tutorial": ""
 }

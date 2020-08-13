@@ -2,7 +2,7 @@
 
 
 if(global.turn == "player"){
-	if(opponent_obj.logos == 15){
+	if(is_string(win_condition_met())){
 		room_restart();
 	}
 	player_obj.retorical_points = 3

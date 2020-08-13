@@ -4,19 +4,35 @@
       "cost": 1,
       "types": ["logos"],
       "power": 1,
-      "face_text": "I'm card #1!"
+      "face_text": "I'm card #1!",
+      "script": "do_damage",
+      "script_params": {}
     },
     {
       "cost": 2,
       "types": ["logos"],
       "power": 2,
-      "face_text": "I'm card #2!"
+      "face_text": "I'm card #2!",
+      "script": "do_damage",
+      "script_params": {}
     },
     {
       "cost": 3,
       "types": ["logos"],
       "power": 3,
-      "face_text": "I'm card #3!"
+      "face_text": "I'm card #3!",
+      "script": "do_damage",
+      "script_params": {}
+    },
+    {
+      "cost": 3,
+      "types": ["logos"],
+      "power": 0,
+      "face_text": "I'm \nsomething new...",
+      "script": "add_token",
+      "script_params": {
+        "token_text": "poop token"
+      }
     }
   ]
 }

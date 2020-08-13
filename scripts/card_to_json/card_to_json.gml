@@ -5,5 +5,7 @@ var metadata = ds_map_create();
 metadata[? "cost"] = card_inst.cost;
 metadata[? "power"] = card_inst.damage;
 metadata[? "face_text"] = card_inst.details;
+metadata[? "script"] = card_inst.script_name;
+metadata[? "script_params"] = card_inst.script_params;
 
 return metadata;

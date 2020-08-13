@@ -19,5 +19,7 @@
 			damage = metadata[? "power"];
 			cost = metadata[? "cost"];
 			details = metadata[? "face_text"];
+			script_name = metadata[? "script"];
+			script_params = metadata[? "script_params"]
 		}
 }
