@@ -7,4 +7,6 @@ friend_health = 0;
 agro_health = 0;
 
 retorical_points = 3;
+tokens = ds_list_create();
+
 my_turn = false;

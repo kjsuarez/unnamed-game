@@ -1,8 +1,29 @@
 var card_inst = argument0;
 var script_params = argument1;
 
-opponent_obj.logos_health = opponent_obj.logos_health + card_inst.damage;
-show_debug_message("points: " + string(opponent_obj.logos_health));
+switch (card_inst.type){
+    case "logos":
+        opponent_obj.logos_health = opponent_obj.logos_health + card_inst.damage;
+        break;
+    case "ethos":
+        opponent_obj.ethos_health = opponent_obj.ethos_health + card_inst.damage;
+        break;
+    case "pathos":
+        opponent_obj.pathos_health = opponent_obj.pathos_health + card_inst.damage;
+        break;
+    case "flirt":
+        opponent_obj.flirt_health = opponent_obj.flirt_health + card_inst.damage;
+        break;
+    case "friend":
+        opponent_obj.friend_health = opponent_obj.friend_health + card_inst.damage;
+        break;
+    case "aggro":
+        opponent_obj.agro_health = opponent_obj.agro_health + card_inst.damage;
+        break;
+}
+
+
+
 
 //pull out card metadata
 var scriptToCall = asset_get_index("card_to_json");

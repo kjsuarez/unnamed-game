@@ -1,7 +1,7 @@
 /// @description
 
 hand_size = 3;
-initial_card_location = [368, 656];
+initial_card_location = [440, 656];
 x_offset = 150;
 card_scale = 7;
 

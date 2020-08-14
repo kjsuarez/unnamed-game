@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00b168ac-4b46-44d6-8677-ae0b85f279de",
+            "Value": {
+                "id": "d0905f5b-51ba-42c7-b0e7-33050005baeb",
+                "resourcePath": "sprites\/token\/token.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "047a04e7-dc30-4a8e-a8a8-fff3906923f8",
             "Value": {
                 "id": "c770ea87-fbbf-4a6a-9c5a-ce8d56bbd0e7",
@@ -68,6 +76,14 @@
                 "id": "8aeea525-ad02-4bd1-abc6-8866297316ed",
                 "resourcePath": "scripts\/add_token\/add_token.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "243b0ef9-5ac2-4783-a514-5de25274bb0a",
+            "Value": {
+                "id": "b3f39ba7-725e-40cf-8c41-584f8dc97998",
+                "resourcePath": "objects\/token_set_obj\/token_set_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -311,6 +327,14 @@
             }
         },
         {
+            "Key": "ca1bc174-a514-4960-85dc-c3753c5321b6",
+            "Value": {
+                "id": "2785697c-a93a-48dc-9010-9beeae703f06",
+                "resourcePath": "rooms\/sandbox\/sandbox.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ca5cb134-5c2d-42dd-96a0-ef4cc5e3858d",
             "Value": {
                 "id": "910ae8f0-9a65-4bfd-8ae3-fca00bd88f71",
@@ -348,6 +372,14 @@
                 "id": "2559b251-fd0d-481c-8e74-04bec730d268",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fec57dd8-a841-4561-938e-1f537668f019",
+            "Value": {
+                "id": "6a31558c-463a-4cf1-9879-85531600e35a",
+                "resourcePath": "objects\/token_obj\/token_obj.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

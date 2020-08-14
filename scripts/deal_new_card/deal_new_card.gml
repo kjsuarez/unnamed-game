@@ -18,6 +18,7 @@
 			image_yscale = hand_obj.card_scale;
 			damage = metadata[? "power"];
 			cost = metadata[? "cost"];
+			type = metadata[? "type"];
 			details = metadata[? "face_text"];
 			script_name = metadata[? "script"];
 			script_params = metadata[? "script_params"]
