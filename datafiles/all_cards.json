@@ -46,6 +46,14 @@
       "script_params": {}
     },
     {
+      "cost": 1,
+      "type": "ethos",
+      "power": 0,
+      "face_text": "add a modifier if none exists\npop modifier if one does",
+      "script": "add_or_pop_modifier",
+      "script_params": {}
+    },
+    {
       "cost": 3,
       "type": "pathos",
       "power": 3,

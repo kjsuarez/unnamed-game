@@ -6,7 +6,7 @@
     "path": "folders/Scripts/deck_handling.yy",
   },
   "resourceVersion": "1.0",
-  "name": "deal_hand",
+  "name": "card_cleanup",
   "tags": [],
   "resourceType": "GMScript",
 }

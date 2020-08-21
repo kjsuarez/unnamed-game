@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "deck_handling",
-    "path": "folders/Scripts/deck_handling.yy",
+    "name": "card_scripts",
+    "path": "folders/Scripts/card_scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "deal_hand",
+  "name": "add_or_pop_modifier",
   "tags": [],
   "resourceType": "GMScript",
 }

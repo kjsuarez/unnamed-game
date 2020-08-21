@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"token","path":"sprites/token/token.yy",},
     "resourceVersion": "1.3",
-    "name": "token",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
