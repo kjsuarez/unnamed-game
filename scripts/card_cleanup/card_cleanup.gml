@@ -12,6 +12,7 @@ function card_cleanup(card_inst){
 
 	//cleanup (for now I think it makes sense for each card script 
 	//to handle it's own cleanup for 'retain' purposes)
+	player_obj.temp_modifier = 1;
 	instance_destroy(card_inst);
 	if(is_string(win_condition_met())){
 		room_restart();

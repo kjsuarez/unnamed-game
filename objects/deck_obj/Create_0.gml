@@ -1,5 +1,5 @@
 /// @description Insert description here
-var file_path = "all_cards.json";
+var file_path = "deck.json";
 if(file_exists(file_path)){
 	var card_hash = load_json(file_path);
 	

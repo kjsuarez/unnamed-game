@@ -1,31 +1,12 @@
 {
   "cards": [
     {
-      "cost": 3,
-      "type": "ethos",
-      "power": 0,
-      "face_text": "Add a token\n to the board",
-      "script": "add_token",
-      "script_params": {
-        "token_text": "poop token"
-      }
-    },
-    {
       "cost": 1,
       "type": "logos",
       "power": 1,
       "face_text": "I'm card #1!",
       "script": "do_cards_damage",
       "script_params": {}
-    },{
-      "cost": 1,
-      "type": "logos",
-      "power": 0,
-      "face_text": "cheap token",
-      "script": "add_token",
-      "script_params": {
-        "token_text": "poop token"
-      }
     },
     {
       "cost": 1,
@@ -38,28 +19,22 @@
       }
     },
     {
-      "cost": 2,
+      "cost": 1,
       "type": "logos",
-      "power": 2,
-      "face_text": "I'm card #2!",
-      "script": "do_cards_damage",
-      "script_params": {}
+      "power": 0,
+      "face_text": "cheap token",
+      "script": "add_token",
+      "script_params": {
+        "token_text": "poop token"
+      }
     },
     {
       "cost": 1,
       "type": "ethos",
       "power": 0,
-      "face_text": "add a modifier if none exists\npop modifier if one does",
+      "face_text": "add a modifier \nif none exists\npop modifier \nif one does",
       "script": "add_or_pop_modifier",
       "script_params": {"owner": "player"}
-    },
-    {
-      "cost": 3,
-      "type": "pathos",
-      "power": 3,
-      "face_text": "I'm card #3!",
-      "script": "do_cards_damage",
-      "script_params": {}
     }
 
   ]

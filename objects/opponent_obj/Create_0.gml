@@ -6,7 +6,8 @@ flirt_health = 0;
 friend_health = 0;
 agro_health = 0;
 
-//attacks = get_enemy_attacks();
+multplier_x = 992;
+multplier_y = 448;
 
 
 my_turn = false;

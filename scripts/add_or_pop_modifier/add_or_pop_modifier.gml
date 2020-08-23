@@ -1,23 +1,23 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function add_or_pop_modifier(card_inst, script_params){
-	var mod_count = instance_number(multiplier_token_obj);
+	var mod_owner_str = script_params[? "owner"]
+	
+	var owners_modifiers = mod_tokens_for(mod_owner_str);
+	var mod_count = ds_list_size(owners_modifiers);
 	if(mod_count == 0){
 
-		var mod_inst;
-		mod_inst = instance_create_depth(100, 100, 0, multiplier_token_obj);
-		with(mod_inst){
-			image_xscale = 2//token_set_obj.token_scale;
-			image_yscale = 2//token_set_obj.token_scale;
-			modifier = 1;
-			face_text = "x1";
-		}
+		add_multiplier(mod_owner_str, 2);
 		card_cleanup(card_inst)
 	}
 	else{
-		multiplier_token_obj.modifier = multiplier_token_obj.modifier * 2
-		multiplier_token_obj.face_text = "x" + string(multiplier_token_obj.modifier);
+		//used for a build modifier card
+		//mod_inst.modifier = mod_inst.modifier * 2
+		//mod_inst.face_text = "x" + string(mod_inst.modifier);
 		card_cleanup(card_inst)
+		mod_inst = owners_modifiers[| 0];
+		player_obj.temp_modifier = mod_inst.modifier;
+		instance_destroy(mod_inst);
 	}
 	
 }

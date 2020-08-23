@@ -11,3 +11,4 @@ draw_text(220, 720, "aggro: " + string(agro_health));
 
 
 draw_text(20, 680, "RP: " + string(retorical_points));
+draw_text(80, 680, "mod: " + string(temp_modifier));
