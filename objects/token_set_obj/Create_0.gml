@@ -1,7 +1,11 @@
 /// @description Insert description here
 
 
-initial_token_location = [300, 300];
+player_initial_token_location = [300, 300];
+enemy_initial_token_location = [600, 300];
+
 y_offset = 50;
 token_scale = 1;
-token_counter = 0;
+
+player_token_counter = 0;
+enemy_token_counter = 0;

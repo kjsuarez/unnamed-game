@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "agnostic_token_scripts",
-    "path": "folders/Scripts/agnostic_token_scripts.yy",
+    "name": "enemy_scripts",
+    "path": "folders/Scripts/enemy_scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "add_token",
+  "name": "handle_enemy_turn",
   "tags": [],
   "resourceType": "GMScript",
 }

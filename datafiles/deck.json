@@ -13,7 +13,7 @@
       "type": "logos",
       "power": 0,
       "face_text": "cheap token",
-      "script": "add_token",
+      "script": "add_token_from_card",
       "script_params": {
         "token_text": "poop token"
       }
@@ -23,7 +23,7 @@
       "type": "logos",
       "power": 0,
       "face_text": "cheap token",
-      "script": "add_token",
+      "script": "add_token_from_card",
       "script_params": {
         "token_text": "poop token"
       }

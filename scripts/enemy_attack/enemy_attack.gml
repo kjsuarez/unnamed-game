@@ -1,9 +1,11 @@
 function enemy_attack(power) {
-	var token_count = instance_number(token_obj);
+	var player_tokens = tokens_for("player");
+	var token_count = ds_list_size(player_tokens);
+	
 	if(token_count > 0){
-		var token_inst = instance_find(token_obj, token_count - 1);
+		var token_inst = player_tokens[| token_count - 1];
 		instance_destroy(token_inst);
-		token_set_obj.token_counter -= 1;
+		token_set_obj.player_token_counter -= 1;
 	}else{
 		var total_damage = get_enemy_damage_total(power);
 		var choices = ds_list_create();

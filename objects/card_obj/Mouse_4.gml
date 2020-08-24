@@ -1,6 +1,4 @@
 /// @description Insert description here
-
-/**
 if(global.turn == "player"){
 	if(player_obj.retorical_points >= cost){
 		player_obj.retorical_points = player_obj.retorical_points - cost
@@ -10,4 +8,3 @@ if(global.turn == "player"){
 		var metadata = script_execute(scriptToCall, self, script_params)
 	}
 }
-**/
