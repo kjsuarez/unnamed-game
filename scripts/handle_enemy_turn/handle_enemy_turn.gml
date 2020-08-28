@@ -17,5 +17,6 @@ function handle_enemy_turn(){
 	}else{
 		add_multiplier("enemy", 2);
 
-	}	
+	}
+	
 }
