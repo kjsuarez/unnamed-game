@@ -98,8 +98,9 @@
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"all_cards.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"deck.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"deck.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"all_cards.json","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",
