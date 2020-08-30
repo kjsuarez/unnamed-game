@@ -5,6 +5,7 @@ if(global.turn == "player"){
 	if(is_string(win_condition_met())){
 		room_restart();
 	}
+	clean_up_statuses(player_obj);
 	player_obj.retorical_points = 3
 	for (var i = 0; i < instance_number(card_obj); ++i;){
 		card_inst = instance_find(card_obj,i);

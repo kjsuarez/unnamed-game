@@ -8,9 +8,13 @@ agro_health = 0;
 
 retorical_points = 3;
 tokens = ds_list_create();
+statuses = ds_list_create();
 temp_modifier = 1;
 
 multplier_x = 100;
 multplier_y = 100;
 
 my_turn = false;
+
+initial_status_location = [110, 290];
+y_offset = -60;

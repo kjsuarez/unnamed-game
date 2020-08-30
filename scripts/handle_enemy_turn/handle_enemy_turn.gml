@@ -3,6 +3,11 @@
 function handle_enemy_turn(){
 	//turn behavior:
 	
+	if(ds_list_size(player_obj.statuses) < 1){
+		add_status(player_obj);
+		return;
+	}
+	
 	if(true){
 		add_token("enemy")
 		return;
