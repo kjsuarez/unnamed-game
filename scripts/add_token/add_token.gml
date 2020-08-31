@@ -1,4 +1,22 @@
 function add_token(combatant){
+	
+	inst_x = combatant.initial_token_location[0];
+	inst_y = combatant.initial_token_location[1] + (token_set_obj.y_offset * ds_list_size(combatant.tokens));
+	inst_z = 0;
+		
+	var token_inst;
+	token_inst = instance_create_depth(inst_x, inst_y, inst_z, token_obj);
+	with(token_inst){
+		image_xscale = token_set_obj.token_scale;
+		image_yscale = token_set_obj.token_scale;
+		face_text = "test: " + string(id);
+		token_script_params = ds_map_create();
+		owner = combatant;
+	}
+	
+	ds_list_add(combatant.tokens, token_inst);
+	
+	/**
 	switch (combatant){
 		case "player":
 			inst_x = token_set_obj.player_initial_token_location[0];
@@ -35,5 +53,6 @@ function add_token(combatant){
 			token_set_obj.enemy_token_counter += 1;
 			break;
 	}
+	**/
 	
 }

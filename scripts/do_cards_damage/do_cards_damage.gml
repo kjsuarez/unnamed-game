@@ -31,14 +31,13 @@ function do_cards_damage(card_inst, script_params) {
 	//add temp modifier
 	var total_damage = player_damage_for(card_inst);
 	//determine if tokens present
-	enemy_tokens = tokens_for("enemy")
+	enemy_tokens = opponent_obj.tokens
 	if(ds_list_size(enemy_tokens) > 0){
 		
 		var token_count = ds_list_size(enemy_tokens);
 		var token_inst = enemy_tokens[| token_count - 1];
-		show_debug_message("destroy instance: " + string(token_inst.id))
+		ds_list_delete(enemy_tokens, token_count - 1);
 		instance_destroy(token_inst);
-		token_set_obj.enemy_token_counter -= 1;
 	}else{
 		//otherwise hit opponents face
 		switch (type){

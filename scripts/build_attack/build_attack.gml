@@ -1,16 +1,16 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+// out of use
 function build_attack(card_inst, type, power){
 	//add temp modifier
 	var total_damage = player_damage_for(card_inst);
 	//determine if tokens present
-	enemy_tokens = tokens_for("enemy")
+	enemy_tokens = opponent_obj.tokens
 	if(ds_list_size(enemy_tokens) > 0){
 		
 		var token_count = ds_list_size(enemy_tokens);
 		var token_inst = enemy_tokens[| token_count - 1];
+		ds_list_delete(enemy_tokens, token_count - 1);
 		instance_destroy(token_inst);
-		token_set_obj.enemy_token_counter -= 1;
+		
 	}else{
 		//otherwise hit opponents face
 		switch (type){
