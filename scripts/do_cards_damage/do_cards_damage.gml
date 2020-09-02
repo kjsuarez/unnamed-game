@@ -40,7 +40,7 @@ function do_cards_damage(card_inst, script_params) {
 		instance_destroy(token_inst);
 	}else{
 		//otherwise hit opponents face
-		switch (type){
+		switch (card_inst.type){
 		    case "logos":
 		        opponent_obj.logos_health = opponent_obj.logos_health + total_damage;
 		        break;

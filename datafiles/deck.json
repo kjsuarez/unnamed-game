@@ -5,7 +5,7 @@
       "type": "logos",
       "power": 1,
       "face_text": "I'm card #1!",
-      "script": "do_cards_damage",
+      "script": "temp_attack",
       "script_params": {}
     },
     {

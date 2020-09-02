@@ -6,5 +6,6 @@ x_offset = 150;
 card_scale = 7;
 
 card_counter = 0;
+card_in_action = false;
 
 deal_hand();
