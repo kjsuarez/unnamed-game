@@ -49,7 +49,7 @@
       "cost": 1,
       "type": "ethos",
       "power": 0,
-      "face_text": "add a modifier if none exists\npop modifier if one does",
+      "face_text": "add a modifier \nif none exists\npop modifier \nif one does",
       "script": "add_or_pop_modifier",
       "script_params": {"owner": "player"}
     },

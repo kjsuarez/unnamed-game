@@ -19,6 +19,7 @@
     {"id":{"name":"tokens_for","path":"scripts/tokens_for/tokens_for.yy",},"order":4,},
     {"id":{"name":"statuses_that_need_handling","path":"scripts/statuses_that_need_handling/statuses_that_need_handling.yy",},"order":2,},
     {"id":{"name":"add_or_pop_modifier","path":"scripts/add_or_pop_modifier/add_or_pop_modifier.yy",},"order":2,},
+    {"id":{"name":"multi_hit_attack","path":"scripts/multi_hit_attack/multi_hit_attack.yy",},"order":7,},
     {"id":{"name":"card_to_json","path":"scripts/card_to_json/card_to_json.yy",},"order":0,},
     {"id":{"name":"resolve_at_animation_end","path":"scripts/resolve_at_animation_end/resolve_at_animation_end.yy",},"order":0,},
     {"id":{"name":"win_condition_met","path":"scripts/win_condition_met/win_condition_met.yy",},"order":5,},
@@ -56,6 +57,7 @@
     {"id":{"name":"attack_obj","path":"objects/attack_obj/attack_obj.yy",},"order":11,},
     {"id":{"name":"build_attack","path":"scripts/build_attack/build_attack.yy",},"order":4,},
     {"id":{"name":"experience_doubt","path":"scripts/experience_doubt/experience_doubt.yy",},"order":0,},
+    {"id":{"name":"do_recursive_damage","path":"scripts/do_recursive_damage/do_recursive_damage.yy",},"order":8,},
     {"id":{"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},"order":1,},
   ],
   "Options": [
