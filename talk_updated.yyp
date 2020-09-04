@@ -36,6 +36,7 @@
     {"id":{"name":"slash_spr","path":"sprites/slash_spr/slash_spr.yy",},"order":7,},
     {"id":{"name":"do_damage","path":"scripts/do_damage/do_damage.yy",},"order":3,},
     {"id":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"order":2,},
+    {"id":{"name":"target_coordinates","path":"scripts/target_coordinates/target_coordinates.yy",},"order":15,},
     {"id":{"name":"counter_obj","path":"objects/counter_obj/counter_obj.yy",},"order":3,},
     {"id":{"name":"shine_status","path":"sprites/shine_status/shine_status.yy",},"order":6,},
     {"id":{"name":"card_obj","path":"objects/card_obj/card_obj.yy",},"order":4,},
