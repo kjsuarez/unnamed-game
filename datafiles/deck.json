@@ -4,6 +4,14 @@
       "cost": 1,
       "type": "logos",
       "power": 1,
+      "face_text": "I'm card #1!",
+      "script": "temp_attack",
+      "script_params": {}
+    },
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 1,
       "face_text": "1 damage\nstays in hand",
       "script": "temp_attack",
       "script_params": {
@@ -30,14 +38,6 @@
       "script_params": {
         "stays": true
       }
-    },
-    {
-      "cost": 1,
-      "type": "logos",
-      "power": 1,
-      "face_text": "I'm card #1!",
-      "script": "temp_attack",
-      "script_params": {}
     },
     {
       "cost": 2,
