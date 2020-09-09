@@ -4,3 +4,4 @@
 //show_debug_message("string length: " + string(details_length));
 
 draw_set_colour(c_red);
+outro_status = "ready";

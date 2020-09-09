@@ -18,7 +18,9 @@ function deal_new_card(inst_x, inst_y, inst_z) {
 			type = metadata[? "type"];
 			details = metadata[? "face_text"];
 			script_name = metadata[? "script"];
-			script_params = metadata[? "script_params"]
+			script_params = metadata[? "script_params"];
+			outro_script = metadata[? "outro_script"];
+			cleanup_script = metadata[? "cleanup_script"];
 		}
 		ds_list_add(hand_obj.hand, card_inst);
 	}

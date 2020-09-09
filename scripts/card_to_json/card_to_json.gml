@@ -9,6 +9,8 @@ function card_to_json(argument0) {
 	metadata[? "face_text"] = card_inst.details;
 	metadata[? "script"] = card_inst.script_name;
 	metadata[? "script_params"] = card_inst.script_params;
+	metadata[? "outro_script"] = card_inst.outro_script;
+	metadata[? "cleanup_script"] = card_inst.cleanup_script;
 
 	return metadata;
 

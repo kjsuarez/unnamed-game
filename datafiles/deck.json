@@ -3,6 +3,16 @@
     {
       "cost": 1,
       "type": "logos",
+      "power": 3,
+      "face_text": "big damage\nbut fades after use",
+      "script": "temp_attack",
+      "outro_script": "animate_slash",
+      "cleanup_script": "no_discard_cleanup",
+      "script_params": {}
+    },
+    {
+      "cost": 1,
+      "type": "logos",
       "power": 1,
       "face_text": "I'm card #1!",
       "script": "temp_attack",
