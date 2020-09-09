@@ -13,6 +13,28 @@ function card_cleanup(card_inst){
 	//cleanup (for now I think it makes sense for each card script 
 	//to handle it's own cleanup for 'retain' purposes)
 	player_obj.temp_modifier = 1;
+	
+	// find this card in hand array and remove it
+	for(i=0; i < ds_list_size(hand_obj.hand); i++;){
+		show_debug_message("$$$RIGHT BEFORE IT HAPPENS$$$");
+		if(hand_obj.hand[| i] == card_inst.id){
+			show_debug_message("$$$WELL AT LEAST IT HAPPENS$$$");
+			ds_list_delete(hand_obj.hand, i);
+		}
+	}
+	
+	for (var i = 0; i < ds_list_size(hand_obj.hand); ++i;){	
+		if(is_undefined(hand_obj.hand[| i]) || !instance_exists(hand_obj.hand[| i])){
+			show_debug_message("found a bad array element!: " + string(hand_obj.hand[| i]))
+			ds_list_delete(hand_obj.hand, i);
+		}
+    }
+	
+	show_debug_message("hand ids after clearing " + string(card_inst.id) + ":");
+	for(i=0; i < ds_list_size(hand_obj.hand); i++;){
+		show_debug_message("card id: " + string(hand_obj.hand[| i].id));
+	}
+	
 	instance_destroy(card_inst);
 	hand_obj.card_in_action = false;
 	if(is_string(win_condition_met())){

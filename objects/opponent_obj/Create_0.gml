@@ -10,14 +10,14 @@ multplier_x = 992;
 multplier_y = 448;
 
 initial_token_location = [600, 300];
-initial_status_location = [900, 400];
+initial_status_location = [x - 60, y + 275];
 y_offset = 60;
 
 tokens = ds_list_create();
 statuses = ds_list_create();
 temp_modifier = 1;
 
-temp_status_inst = instance_create_depth(900, 400, -10, status_obj);
+temp_status_inst = instance_create_depth(initial_status_location[0], initial_status_location[1], -10, status_obj);
 with(temp_status_inst){
 	image_xscale = 2;
 	image_yscale = 2;
