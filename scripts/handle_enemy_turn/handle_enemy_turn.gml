@@ -3,8 +3,8 @@ function handle_enemy_turn(){
 	//turn behavior:
 	var moves_arry = ["attack", "token", "multiplier", "status"];
 	var moves = ds_list_create();
-	//ds_list_add(moves, "attack");
-	ds_list_add(moves, "token");
+	ds_list_add(moves, "attack");
+	//ds_list_add(moves, "token");
 	//ds_list_add(moves, "multiplier");
 	//ds_list_add(moves, "status");
 	ds_list_shuffle(moves);

@@ -28,16 +28,6 @@
       }
     },
     {
-      "cost": 1,
-      "type": "logos",
-      "power": 0,
-      "face_text": "cheap token",
-      "script": "add_token",
-      "script_params": {
-        "token_text": "poop token"
-      }
-    },
-    {
       "cost": 2,
       "type": "logos",
       "power": 2,
@@ -68,6 +58,27 @@
       "face_text": "I'm card #3!",
       "script": "do_cards_damage",
       "script_params": {}
+    },
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 3,
+      "face_text": "big damage\nbut fades after use",
+      "script": "temp_attack",
+      "outro_script": "animate_slash",
+      "cleanup_script": "no_discard_cleanup",
+      "script_params": {}
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "do 1 damage 3 times",
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
     }
 
   ]

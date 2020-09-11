@@ -28,7 +28,6 @@
     {"id":{"name":"do_cards_damage","path":"scripts/do_cards_damage/do_cards_damage.yy",},"order":0,},
     {"id":{"name":"experience_statuses_for","path":"scripts/experience_statuses_for/experience_statuses_for.yy",},"order":1,},
     {"id":{"name":"clean_up_statuses","path":"scripts/clean_up_statuses/clean_up_statuses.yy",},"order":4,},
-    {"id":{"name":"direct_damage","path":"scripts/direct_damage/direct_damage.yy",},"order":1,},
     {"id":{"name":"player_damage_for","path":"scripts/player_damage_for/player_damage_for.yy",},"order":12,},
     {"id":{"name":"muliplier_token","path":"sprites/muliplier_token/muliplier_token.yy",},"order":4,},
     {"id":{"name":"no_discard_cleanup","path":"scripts/no_discard_cleanup/no_discard_cleanup.yy",},"order":9,},

@@ -6,6 +6,13 @@ flirt_health = 0;
 friend_health = 0;
 agro_health = 0;
 
+logos_stat = 0.8;
+ethos_stat = 1.1;
+pathos_stat = 0.8;
+flirt_stat = 1.1;
+friend_stat = 0.8;
+agro_stat = 1.1;
+
 retorical_points = 3;
 tokens = ds_list_create();
 statuses = ds_list_create();

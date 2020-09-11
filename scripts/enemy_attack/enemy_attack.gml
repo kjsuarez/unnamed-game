@@ -8,12 +8,12 @@ function enemy_attack(power) {
 		ds_list_delete(player_tokens, token_count - 1);
 		instance_destroy(token_inst);
 	}else{
-		var total_damage = get_enemy_damage_total(power);
 		var choices = ds_list_create();
 		choices[| 0] = "logos";
 		choices[| 1] = "pathos";
 		ds_list_shuffle(choices);
-
+		var total_damage = get_enemy_damage_total(power, choices[| 0]);
+		
 		switch (choices[| 0]){
 		    case "logos":
 		        player_obj.logos_health += total_damage;

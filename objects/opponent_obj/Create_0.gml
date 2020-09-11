@@ -6,6 +6,13 @@ flirt_health = 0;
 friend_health = 0;
 agro_health = 0;
 
+logos_stat = 0.8;
+ethos_stat = 1.0;
+pathos_stat = 1.0;
+flirt_stat = 1.0;
+friend_stat = 1.0;
+agro_stat = 1.0;
+
 multplier_x = 992;
 multplier_y = 448;
 
