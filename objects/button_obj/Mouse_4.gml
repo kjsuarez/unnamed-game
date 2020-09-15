@@ -43,6 +43,6 @@ if(global.turn == "player"){
 	
 	var text_var = ds_list_size(hand_obj.hand);
 	
-	global.turn = "enemy";
+	next_phase();
 }
 

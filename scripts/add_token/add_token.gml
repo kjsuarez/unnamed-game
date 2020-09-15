@@ -1,4 +1,4 @@
-function add_token(combatant){
+function add_token(combatant, token_params){
 	
 	inst_x = combatant.initial_token_location[0];
 	inst_y = combatant.initial_token_location[1] + (token_set_obj.y_offset * ds_list_size(combatant.tokens));
@@ -10,49 +10,19 @@ function add_token(combatant){
 		image_xscale = token_set_obj.token_scale;
 		image_yscale = token_set_obj.token_scale;
 		face_text = "test: " + string(id);
-		token_script_params = ds_map_create();
+		token_script_params = token_params;
 		owner = combatant;
+		if(is_numeric(token_params[? "time_to_live"])){
+			time_to_live = token_params[? "time_to_live"];
+		}
+		if(is_string(token_params[? "animation_script"])){
+			animation_script = token_params[? "animation_script"];
+		}
+		if(is_string(token_params[? "turn_script"])){
+			turn_script = token_params[? "turn_script"];
+		}
+		
 	}
 	
 	ds_list_add(combatant.tokens, token_inst);
-	
-	/**
-	switch (combatant){
-		case "player":
-			inst_x = token_set_obj.player_initial_token_location[0];
-			inst_y = token_set_obj.player_initial_token_location[1] + (token_set_obj.y_offset * token_set_obj.player_token_counter);;
-			inst_z = 0;
-		
-			var token_inst;
-			token_inst = instance_create_depth(inst_x, inst_y, inst_z, token_obj);
-			with(token_inst){
-				image_xscale = token_set_obj.token_scale;
-				image_yscale = token_set_obj.token_scale;
-				face_text = "test: " + string(id);
-				token_script_params = ds_map_create();
-				owner = combatant;
-			}
-
-			token_set_obj.player_token_counter += 1;
-			break;
-		case "enemy":
-			inst_x = token_set_obj.enemy_initial_token_location[0];
-			inst_y = token_set_obj.enemy_initial_token_location[1] + (token_set_obj.y_offset * token_set_obj.enemy_token_counter);;
-			inst_z = 0;
-		
-			var token_inst;
-			token_inst = instance_create_depth(inst_x, inst_y, inst_z, token_obj);
-			with(token_inst){
-				image_xscale = token_set_obj.token_scale;
-				image_yscale = token_set_obj.token_scale;
-				face_text =  "test: " + string(id);
-				token_script_params = ds_map_create();
-				owner = combatant;
-			}
-
-			token_set_obj.enemy_token_counter += 1;
-			break;
-	}
-	**/
-	
 }

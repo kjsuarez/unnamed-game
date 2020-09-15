@@ -3,6 +3,58 @@
     {
       "cost": 1,
       "type": "logos",
+      "power": 0,
+      "face_text": "heal token",
+      "script": "add_token_from_card",
+      "script_params": {
+        "token_text": "poop token",
+        "animation_script": "sparkle_once",
+        "turn_script": "logos_heal",
+        "time_to_live": 3
+      }
+    },
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 0,
+      "face_text": "heal token",
+      "script": "add_token_from_card",
+      "script_params": {
+        "token_text": "poop token",
+        "animation_script": "sparkle_once",
+        "turn_script": "logos_heal",
+        "time_to_live": 3
+      }
+    },
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 0,
+      "face_text": "heal token",
+      "script": "add_token_from_card",
+      "script_params": {
+        "token_text": "poop token",
+        "animation_script": "sparkle_once",
+        "turn_script": "logos_heal",
+        "time_to_live": 3
+      }
+    },
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 0,
+      "face_text": "heal token",
+      "script": "add_token_from_card",
+      "script_params": {
+        "token_text": "poop token",
+        "animation_script": "sparkle_once",
+        "turn_script": "logos_heal",
+        "time_to_live": 3
+      }
+    },
+    {
+      "cost": 1,
+      "type": "logos",
       "power": 3,
       "face_text": "big damage\nbut fades after use",
       "script": "temp_attack",

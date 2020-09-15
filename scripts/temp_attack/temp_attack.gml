@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function temp_attack(card_inst, params){
 	var target_coor = target_coordinates(opponent_obj);
-	attack_inst = instance_create_depth(target_coor[0], target_coor[1], -100, attack_obj);
+	attack_inst = instance_create_depth(target_coor[0], target_coor[1], -100, animator_obj);
 	with(attack_inst){
 		sprite_index = slash_spr;
 		animation_script = "resolve_at_animation_end";

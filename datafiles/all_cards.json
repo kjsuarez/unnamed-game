@@ -5,7 +5,7 @@
       "type": "ethos",
       "power": 0,
       "face_text": "Add a token\n to the board",
-      "script": "add_token",
+      "script": "add_token_from_card",
       "script_params": {
         "token_text": "poop token"
       }
@@ -17,14 +17,18 @@
       "face_text": "I'm card #1!",
       "script": "do_cards_damage",
       "script_params": {}
-    },{
+    },
+    {
       "cost": 1,
       "type": "logos",
       "power": 0,
       "face_text": "cheap token",
-      "script": "add_token",
+      "script": "add_token_from_card",
       "script_params": {
-        "token_text": "poop token"
+        "token_text": "poop token",
+        "animation_script": "sparkle_once",
+        "turn_script": "logos_heal",
+        "time_to_live": 3
       }
     },
     {
