@@ -10,6 +10,6 @@ function multi_hit_attack(card_inst, xxx_params){
 		script_params = xxx_params
 		total_animation_steps = 0;
 		animation_counter = 0;
-		original_card = card_inst;
+		originating_instance = card_inst;
 	}
 }

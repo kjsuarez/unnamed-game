@@ -6,7 +6,7 @@ if(animation_script != false){
 
 	if(animation_response == true){
 		var actionScriptToCall = asset_get_index(action_script);
-		var action_response = script_execute(actionScriptToCall, original_card, script_params)
+		var action_response = script_execute(actionScriptToCall, originating_instance, script_params)
 		
 		//hand_obj.card_in_action = false;
 		instance_destroy(self);
@@ -14,7 +14,7 @@ if(animation_script != false){
 	animation_counter += 1;
 }else{
 	var actionScriptToCall = asset_get_index(action_script);
-	var action_response = script_execute(actionScriptToCall, original_card, script_params)
+	var action_response = script_execute(actionScriptToCall, originating_instance, script_params)
 	//hand_obj.card_in_action = false;
 	instance_destroy(self);
 }

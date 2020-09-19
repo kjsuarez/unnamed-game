@@ -10,6 +10,6 @@ function temp_attack(card_inst, params){
 		script_params = ds_map_create();
 		total_animation_steps = 0;
 		animation_counter = 0;
-		original_card = card_inst;
+		originating_instance = card_inst;
 	}
 }

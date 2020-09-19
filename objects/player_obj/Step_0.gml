@@ -10,7 +10,11 @@ if(global.turn == "player_statuses"){
 	}
 }
 if(global.turn == "player_tokens" ){
-	next_phase();
+	var finished_handling_tokens = handle_tokens(self);
+	if(finished_handling_tokens){
+		set_tokens_to_ready(self);
+		next_phase();
+	}
 }
 if(global.turn == "player"){
 	// wait for player to end turn
