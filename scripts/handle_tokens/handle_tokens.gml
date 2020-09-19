@@ -1,5 +1,5 @@
 function handle_tokens(user){
-	show_debug_message("handling tokens for " + string(user));
+	show_debug_message("handling tokens for " + user.name_str);
 	
 	var finished = true;
 	relevant_tokens = find_tokens_with(user, "turn_script"); // all of this user's tokens that do something every turn

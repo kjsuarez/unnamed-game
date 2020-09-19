@@ -18,7 +18,13 @@ function handle_enemy_turn(){
 			break;
 		
 		case "token":
-			add_token(opponent_obj, ds_map_create());
+			var token_params = ds_map_create();
+			token_params[? "turn_animation_script"] = "sparkle_once";
+			token_params[? "turn_script"] = "logos_heal";
+			token_params[? "power"] = 1;
+			token_params[? "time_to_live"] = 3;
+       
+			add_token(opponent_obj, token_params);
 			break;
 		
 		case "multiplier":

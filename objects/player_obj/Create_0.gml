@@ -26,3 +26,5 @@ my_turn = false;
 initial_token_location = [300, 300];
 initial_status_location = [110, 290];
 y_offset = -60;
+
+name_str = "player";
