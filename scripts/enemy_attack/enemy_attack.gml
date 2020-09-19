@@ -5,8 +5,7 @@ function enemy_attack(power) {
 	
 	if(token_count > 0){
 		var token_inst = player_tokens[| token_count - 1];
-		ds_list_delete(player_tokens, token_count - 1);
-		instance_destroy(token_inst);
+		attack_token(token_inst);
 	}else{
 		var choices = ds_list_create();
 		choices[| 0] = "logos";

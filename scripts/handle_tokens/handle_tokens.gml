@@ -2,20 +2,26 @@ function handle_tokens(user){
 	show_debug_message("handling tokens for " + user.name_str);
 	
 	var finished = true;
-	relevant_tokens = find_tokens_with(user, "turn_script"); // all of this user's tokens that do something every turn
+	relevant_tokens = user.tokens;//find_tokens_with(user, "turn_script"); // all of this user's tokens that do something every turn
 	
 	show_debug_message("number of relavant tokens: " + string(ds_list_size(relevant_tokens)));
 	
 	for(var i = 0; i < ds_list_size(relevant_tokens); i++;){
 		var current_token = relevant_tokens[| i];
+		var animation_script_name = current_token.token_script_params[? "turn_animation_script"];
+		var action_script_name = current_token.token_script_params[? "turn_script"];
+			
 		
 		if(current_token.animation_status != "finished"){
 			finished = false;
 		}
 		if(current_token.animation_status == "ready"){
 			
-			var animation_script_name = current_token.token_script_params[? "turn_animation_script"];
-			var action_script_name = current_token.token_script_params[? "turn_script"];
+			var token_expired = handle_token_ttl(current_token);
+			if(token_expired){
+				break;
+			}
+			
 			
 			if(!is_undefined(animation_script_name)){
 				token_animation_inst = instance_create_depth(current_token.x, current_token.y, -100, animator_obj);
@@ -40,8 +46,11 @@ function handle_tokens(user){
 			break;
 		} 
 		if(current_token.animation_status == "execute"){
-			var scriptToCall = asset_get_index(current_token.turn_script);
-			script_execute(scriptToCall, user, current_token.token_script_params)
+
+			if(!is_undefined(action_script_name)){
+				var scriptToCall = asset_get_index(current_token.turn_script);
+				script_execute(scriptToCall, user, current_token.token_script_params)
+			}
 			current_token.animation_status = "finished";
 			break;
 		}

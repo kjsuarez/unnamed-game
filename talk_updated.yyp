@@ -24,6 +24,7 @@
     {"id":{"name":"add_or_pop_modifier","path":"scripts/add_or_pop_modifier/add_or_pop_modifier.yy",},"order":2,},
     {"id":{"name":"multi_hit_attack","path":"scripts/multi_hit_attack/multi_hit_attack.yy",},"order":7,},
     {"id":{"name":"logos_heal","path":"scripts/logos_heal/logos_heal.yy",},"order":8,},
+    {"id":{"name":"remove_from_token_list","path":"scripts/remove_from_token_list/remove_from_token_list.yy",},"order":11,},
     {"id":{"name":"card_to_json","path":"scripts/card_to_json/card_to_json.yy",},"order":0,},
     {"id":{"name":"resolve_at_animation_end","path":"scripts/resolve_at_animation_end/resolve_at_animation_end.yy",},"order":0,},
     {"id":{"name":"win_condition_met","path":"scripts/win_condition_met/win_condition_met.yy",},"order":5,},
@@ -49,6 +50,7 @@
     {"id":{"name":"counter_obj","path":"objects/counter_obj/counter_obj.yy",},"order":3,},
     {"id":{"name":"shine_status","path":"sprites/shine_status/shine_status.yy",},"order":6,},
     {"id":{"name":"card_obj","path":"objects/card_obj/card_obj.yy",},"order":4,},
+    {"id":{"name":"handle_token_ttl","path":"scripts/handle_token_ttl/handle_token_ttl.yy",},"order":12,},
     {"id":{"name":"get_enemy_damage_total","path":"scripts/get_enemy_damage_total/get_enemy_damage_total.yy",},"order":2,},
     {"id":{"name":"add_status","path":"scripts/add_status/add_status.yy",},"order":6,},
     {"id":{"name":"temp_attack","path":"scripts/temp_attack/temp_attack.yy",},"order":6,},
@@ -70,6 +72,7 @@
     {"id":{"name":"build_attack","path":"scripts/build_attack/build_attack.yy",},"order":4,},
     {"id":{"name":"experience_doubt","path":"scripts/experience_doubt/experience_doubt.yy",},"order":0,},
     {"id":{"name":"do_recursive_damage","path":"scripts/do_recursive_damage/do_recursive_damage.yy",},"order":8,},
+    {"id":{"name":"attack_token","path":"scripts/attack_token/attack_token.yy",},"order":10,},
     {"id":{"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},"order":1,},
   ],
   "Options": [
