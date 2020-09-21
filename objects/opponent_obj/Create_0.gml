@@ -52,5 +52,6 @@ ds_list_add(statuses, temp_status_inst);
 
 my_turn = false;
 thinking = 0;
+animating = false;
 status_thinking = 0;
 name_str = "opponent";

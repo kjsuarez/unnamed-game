@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "cost": 1,
+      "type": "flirt",
+      "power": 0,
+      "face_text": "flirt token",
+      "script": "add_token_from_card",
+      "script_params": {
+        "token_text": "flirt token",
+        "turn_script": "pop_or_fizzle",
+        "take_damage_script": "store_damage_taken",
+        "power": 1,
+        "time_to_live": 3
+      }
+    }
+  ]
+}
