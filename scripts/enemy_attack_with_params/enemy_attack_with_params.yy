@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "animator_scripts",
-    "path": "folders/Scripts/animator_scripts.yy",
+    "name": "enemy_scripts",
+    "path": "folders/Scripts/enemy_scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sparkle_once",
+  "name": "enemy_attack_with_params",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "animator_scripts",
-    "path": "folders/Scripts/animator_scripts.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sparkle_once",
+  "name": "next_phase_with_params",
   "tags": [],
   "resourceType": "GMScript",
 }

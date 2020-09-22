@@ -8,5 +8,6 @@ ds_list_add(phases, "player");
 ds_list_add(phases, "opponent_statuses");
 ds_list_add(phases, "opponent_tokens");
 ds_list_add(phases, "opponent");
+ds_list_add(phases, "resolve_opponent_attack");
 
 global.turn = "player";

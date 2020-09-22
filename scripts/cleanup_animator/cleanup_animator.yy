@@ -6,7 +6,7 @@
     "path": "folders/Scripts/animator_scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sparkle_once",
+  "name": "cleanup_animator",
   "tags": [],
   "resourceType": "GMScript",
 }

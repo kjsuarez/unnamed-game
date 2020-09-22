@@ -4,7 +4,7 @@ function handle_enemy_turn(){
 	var moves_arry = ["attack", "token", "multiplier", "status"];
 	var moves = ds_list_create();
 	ds_list_add(moves, "attack");
-	ds_list_add(moves, "token");
+	//ds_list_add(moves, "token");
 	//ds_list_add(moves, "multiplier");
 	//ds_list_add(moves, "status");
 	ds_list_shuffle(moves);
@@ -14,7 +14,13 @@ function handle_enemy_turn(){
 	switch (current_move)
     {
 		case "attack":
-			enemy_attack(2);
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj);
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+			
+			//enemy_attack(2);
 			break;
 		
 		case "token":
@@ -25,6 +31,8 @@ function handle_enemy_turn(){
 			token_params[? "time_to_live"] = 3;
        
 			add_token(opponent_obj, token_params);
+			
+			next_phase(); // until this case is animated
 			break;
 		
 		case "multiplier":
@@ -39,6 +47,8 @@ function handle_enemy_turn(){
 				add_multiplier("enemy", 2);
 
 			}
+			
+			next_phase(); // until this case is animated
 		break;
 		
 		case "status":
