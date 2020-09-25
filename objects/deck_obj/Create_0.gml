@@ -10,7 +10,7 @@ if(file_exists(file_path)){
 	for(var i = 0; i < ds_list_size(all_cards_array); i++;){
 		var card_hash = all_cards_array[| i];
 		var cost = card_hash[? "cost"];
-		show_debug_message("cost: " + string(cost))
+		//show_debug_message("cost: " + string(cost))
 	}
 	var hand_inst;
 		hand_inst = instance_create_depth(0, 0,0, hand_obj);

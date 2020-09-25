@@ -28,16 +28,16 @@ if(global.turn == "player"){
 		remove_card_from_hand(instances_to_destroy[| i]);
     }
 	
-	show_debug_message("hand array size before cleanup: " + string(ds_list_size(hand_obj.hand)));
+	//show_debug_message("hand array size before cleanup: " + string(ds_list_size(hand_obj.hand)));
 	
 	clean_hand_array();
 		
-	show_debug_message("hand array size after cleanup: " + string(ds_list_size(hand_obj.hand)));
+	//show_debug_message("hand array size after cleanup: " + string(ds_list_size(hand_obj.hand)));
 	
 	// reset x position for any cards that don't get discarded at end of turn
 	for (var i = 0; i < ds_list_size(hand_obj.hand); ++i;){	
 		card_inst = hand_obj.hand[| i];
-		show_debug_message("card id in hand array: " + string(card_inst.id))
+		//show_debug_message("card id in hand array: " + string(card_inst.id))
 		card_inst.x = hand_obj.initial_card_location[0] + (hand_obj.x_offset * i);
     }
 	

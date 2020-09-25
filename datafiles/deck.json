@@ -11,7 +11,7 @@
         "turn_animation_script": "sparkle_once",
         "turn_script": "logos_heal",
         "power": 1,
-        "time_to_live": 3
+        "time_to_live": 1
       }
     },
     {
@@ -25,7 +25,7 @@
         "turn_animation_script": "sparkle_once",
         "turn_script": "logos_heal",
         "power": 1,
-        "time_to_live": 3
+        "time_to_live": 1
       }
     },
     {
@@ -37,7 +37,7 @@
       "script_params": {
         "token_text": "poop token",
         "power": 1,
-        "time_to_live": 3
+        "time_to_live": 1
       }
     },
     {

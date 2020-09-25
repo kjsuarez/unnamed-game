@@ -28,9 +28,9 @@ function card_cleanup(card_inst){
 	
 			clean_hand_array()
 	
-			show_debug_message("hand ids after clearing " + string(card_inst.id) + ":");
+			//show_debug_message("hand ids after clearing " + string(card_inst.id) + ":");
 			for(i=0; i < ds_list_size(hand_obj.hand); i++;){
-				show_debug_message("card id: " + string(hand_obj.hand[| i].id));
+				//show_debug_message("card id: " + string(hand_obj.hand[| i].id));
 			}
 	
 			//instance_destroy(card_inst);

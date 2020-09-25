@@ -2,7 +2,7 @@ function add_token(combatant, token_params){
 	
 	inst_x = combatant.initial_token_location[0];
 	inst_y = combatant.initial_token_location[1] + (token_set_obj.y_offset * ds_list_size(combatant.tokens));
-	inst_z = 0;
+	inst_z = -10;
 		
 	var token_inst;
 	token_inst = instance_create_depth(inst_x, inst_y, inst_z, token_obj);

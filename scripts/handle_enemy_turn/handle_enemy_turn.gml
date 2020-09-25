@@ -3,13 +3,15 @@ function handle_enemy_turn(){
 	//turn behavior:
 	var moves_arry = ["attack", "token", "multiplier", "status"];
 	var moves = ds_list_create();
-	ds_list_add(moves, "attack");
-	//ds_list_add(moves, "token");
+	//ds_list_add(moves, "attack");
+	//ds_list_add(moves, "multi_attack");
+	ds_list_add(moves, "token");
 	//ds_list_add(moves, "multiplier");
 	//ds_list_add(moves, "status");
 	ds_list_shuffle(moves);
 	var current_move = moves[| 0];
-	show_debug_message("current move: " + current_move);
+	
+	//show_debug_message("current move: " + current_move);
 	
 	switch (current_move)
     {
@@ -23,12 +25,25 @@ function handle_enemy_turn(){
 			//enemy_attack(2);
 			break;
 		
+		case "multi_attack":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "hits"] = 3;
+			attack_script_params[? "cleanup_script"] = "next_phase_when_ready";
+			attack_script_params[? "animators_finished"] = false;
+			
+			show_debug_message("calling enemymulti_hit from opponent turn")
+			enemy_multi_hit(attack_script_params);
+			
+			//enemy_attack(2);
+			break;
+		
 		case "token":
 			var token_params = ds_map_create();
 			token_params[? "turn_animation_script"] = "sparkle_once";
 			token_params[? "turn_script"] = "logos_heal";
 			token_params[? "power"] = 1;
-			token_params[? "time_to_live"] = 3;
+			token_params[? "time_to_live"] = 1;
        
 			add_token(opponent_obj, token_params);
 			
@@ -53,6 +68,16 @@ function handle_enemy_turn(){
 		
 		case "status":
 			add_status(player_obj);
+			break;
+			
+		default:
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj);
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+			
+			//enemy_attack(2);
 			break;
 	}
 }

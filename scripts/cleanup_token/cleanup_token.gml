@@ -3,4 +3,5 @@
 function cleanup_token(token_inst){	
 	remove_from_token_list(token_inst.owner, token_inst);
 	instance_destroy(token_inst);
+	arrange_tokens(token_inst.owner);
 }

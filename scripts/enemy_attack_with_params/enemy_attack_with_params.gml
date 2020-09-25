@@ -10,11 +10,11 @@ function enemy_attack_with_params(opponent, script_params) {
 		var total_damage = get_enemy_damage_total(attack_power, choices[| 0]);
 	
 	if(token_count > 0){
-		show_debug_message("Attacking player tokens");
+		//show_debug_message("Attacking player tokens");
 		var token_inst = player_tokens[| token_count - 1];
 		attack_token(opponent_obj, token_inst, total_damage);
 	}else{
-		show_debug_message("attacking player directly");
+		//show_debug_message("attacking player directly");
 		switch (choices[| 0]){
 		    case "logos":
 		        player_obj.logos_health += total_damage;

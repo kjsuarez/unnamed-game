@@ -1,4 +1,5 @@
 /// @description Insert description here
+
 logos_health = 0;
 ethos_health = 0;
 pathos_health = 0;
@@ -16,7 +17,7 @@ agro_stat = 1.0;
 multplier_x = 992;
 multplier_y = 448;
 
-initial_token_location = [600, 300];
+initial_token_location = [x - 100, y];
 initial_status_location = [x - 60, y + 275];
 y_offset = 60;
 

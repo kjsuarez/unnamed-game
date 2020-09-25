@@ -8,3 +8,5 @@ total_animation_steps = 0;
 animation_counter = 0;
 children = ds_list_create();
 parent = false;
+
+show_debug_message("creadted animator "+ string(id));

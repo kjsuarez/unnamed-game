@@ -24,7 +24,9 @@ if(!animating){
 			}
 			thinking = 0;	
 			deal_hand();
+			show_debug_message("hitting next phase at end of enemy turn...")
 			next_phase();
+			show_debug_message("phase is: " + global.turn);
 			clean_up_statuses(self);
 		}
 	}

@@ -1,6 +1,6 @@
 function deal_new_card(inst_x, inst_y, inst_z) {
 	{
-		show_debug_message("deck size: " + string(ds_list_size(deck_obj.deck_array)));
+		//show_debug_message("deck size: " + string(ds_list_size(deck_obj.deck_array)));
 		if(ds_list_size(deck_obj.deck_array) < 1){
 			shuffle_discard_in();
 		}
