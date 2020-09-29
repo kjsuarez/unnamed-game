@@ -12,7 +12,7 @@ function enemy_attack_with_params(opponent, script_params) {
 	if(token_count > 0){
 		//show_debug_message("Attacking player tokens");
 		var token_inst = player_tokens[| token_count - 1];
-		attack_token(opponent_obj, token_inst, total_damage);
+		attack_token_with_params(opponent_obj, token_inst, total_damage, script_params);
 	}else{
 		//show_debug_message("attacking player directly");
 		switch (choices[| 0]){

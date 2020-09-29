@@ -1,11 +1,9 @@
 
-function enemy_recursive_damage(original_inst, script_params){
+function enemy_recursive_cleanup(original_inst, script_params){
 	var script_params_clone = ds_map_create();
 	ds_map_copy(script_params_clone, script_params);
 	var counter = script_params_clone[? "hits"];
-	
-	show_debug_message("skipping damage function, counter = " + string(counter))
-	enemy_attack_with_params(false, script_params_clone);
+
 	
 	counter -= 1;
 	script_params_clone[? "hits"] = counter;
@@ -27,6 +25,7 @@ function enemy_recursive_damage(original_inst, script_params){
 		}
 	}else{
 		show_debug_message("inside recursive damage, animators_finished is true, do nothing");
+		next_phase();
 	}
 
 	

@@ -29,7 +29,6 @@ function handle_enemy_turn(){
 			var attack_script_params = ds_map_create();
 			attack_script_params[? "power"] = 2;
 			attack_script_params[? "hits"] = 3;
-			attack_script_params[? "cleanup_script"] = "next_phase_when_ready";
 			attack_script_params[? "animators_finished"] = false;
 			
 			show_debug_message("calling enemymulti_hit from opponent turn")

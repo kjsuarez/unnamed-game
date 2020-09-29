@@ -1,5 +1,14 @@
 /// @description Insert description here
-// phases: [ "player_statuses", "player_tokens", "player", "opponent_statuses", "opponent_tokens", "opponent"]
+/* phases: [ 
+	"player_statuses", 
+	"player_tokens", 
+	"player", 
+	"opponent_statuses", 
+	"opponent_tokens", 
+	"opponent",
+	"resolve_opponent_attack"
+]
+*/
 
 phases = ds_list_create();
 ds_list_add(phases, "player_statuses");

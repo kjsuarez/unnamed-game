@@ -9,7 +9,12 @@ function handle_tokens(user){
 	for(var i = 0; i < ds_list_size(relevant_tokens); i++;){
 		var current_token = relevant_tokens[| i];
 		var animation_script_name = current_token.token_script_params[? "turn_animation_script"];
-		var action_script_name = current_token.token_script_params[? "turn_script"];
+		if(!is_undefined(current_token.token_script_params[? "turn_script"])){
+			var action_script_name = current_token.token_script_params[? "turn_script"];
+		}else{
+			var action_script_name = false;
+		}
+		
 			
 		
 		if(current_token.animation_status != "finished"){
@@ -47,7 +52,7 @@ function handle_tokens(user){
 		} 
 		if(current_token.animation_status == "execute"){
 
-			if(!is_undefined(action_script_name)){
+			if(!is_undefined(action_script_name) && action_script_name != false){
 				var scriptToCall = asset_get_index(current_token.turn_script);
 				script_execute(scriptToCall, user, current_token.token_script_params)
 			}
