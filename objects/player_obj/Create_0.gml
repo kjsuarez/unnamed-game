@@ -22,6 +22,7 @@ multplier_x = 100;
 multplier_y = 100;
 
 my_turn = false;
+selecting_target = false;
 
 initial_token_location = [300, 300];
 initial_status_location = [110, 290];

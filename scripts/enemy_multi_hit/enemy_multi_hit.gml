@@ -1,6 +1,6 @@
 function enemy_multi_hit(script_params){
 	script_params[? "cleanup_script"] = "enemy_recursive_cleanup";
-	var target = target_coordinates(player_obj);
+	var target = target_coordinates(player_obj, script_params[? "target"]);
 	show_debug_message("about to create a recursive damage animator")
 	create_animator(
 		[target[0],	

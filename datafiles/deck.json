@@ -8,8 +8,8 @@
       "script": "add_token_from_card",
       "script_params": {
         "token_text": "flirt token",
-        
-
+        "turn_animation_script": "sparkle_once",
+        "turn_script": "pop_or_fizzle",
         "take_damage_script": "store_damage_taken",
         "power": 1,
         "time_to_live": 3
@@ -52,7 +52,8 @@
       "script_params": {
         "token_text": "poop token",
         "power": 1,
-        "time_to_live": 1
+        "time_to_live": 1,
+        "defender": true
       }
     },
     {

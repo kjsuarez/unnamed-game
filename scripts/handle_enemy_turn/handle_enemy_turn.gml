@@ -4,8 +4,8 @@ function handle_enemy_turn(){
 	var moves_arry = ["attack", "token", "multiplier", "status"];
 	var moves = ds_list_create();
 	//ds_list_add(moves, "attack");
-	//ds_list_add(moves, "multi_attack");
-	ds_list_add(moves, "token");
+	ds_list_add(moves, "multi_attack");
+	//ds_list_add(moves, "token");
 	//ds_list_add(moves, "multiplier");
 	//ds_list_add(moves, "status");
 	ds_list_shuffle(moves);
@@ -19,7 +19,7 @@ function handle_enemy_turn(){
 			var attack_script_params = ds_map_create();
 			attack_script_params[? "power"] = 2;
 			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
-			var target = target_coordinates(player_obj);
+			var target = target_coordinates(player_obj, "stack");
 			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
 			
 			//enemy_attack(2);
@@ -30,6 +30,12 @@ function handle_enemy_turn(){
 			attack_script_params[? "power"] = 2;
 			attack_script_params[? "hits"] = 3;
 			attack_script_params[? "animators_finished"] = false;
+			if(ds_list_size(player_obj.tokens) > 1){
+				attack_script_params[? "target"] = "stack";
+			}else{
+				attack_script_params[? "target"] = "player";
+			}
+			
 			
 			show_debug_message("calling enemymulti_hit from opponent turn")
 			enemy_multi_hit(attack_script_params);
@@ -73,7 +79,7 @@ function handle_enemy_turn(){
 			var attack_script_params = ds_map_create();
 			attack_script_params[? "power"] = 2;
 			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
-			var target = target_coordinates(player_obj);
+			var target = target_coordinates(player_obj, "player");
 			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
 			
 			//enemy_attack(2);

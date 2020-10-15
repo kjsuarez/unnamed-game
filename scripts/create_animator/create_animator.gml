@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function create_animator(target_coor, sprite_param, animation_script_str, action_script_str, original_inst, animator_script_params){
 
 	attack_inst = instance_create_depth(target_coor[0], target_coor[1], -100, animator_obj);

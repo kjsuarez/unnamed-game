@@ -21,6 +21,14 @@ function deal_new_card(inst_x, inst_y, inst_z) {
 			script_params = metadata[? "script_params"];
 			outro_script = metadata[? "outro_script"];
 			cleanup_script = metadata[? "cleanup_script"];
+			/*
+			if(metadata[? "needs_target"]){
+				needs_target = metadata[? "needs_target"];
+			} else {
+				needs_target = false;
+			}
+			*/
+			
 		}
 		ds_list_add(hand_obj.hand, card_inst);
 	}

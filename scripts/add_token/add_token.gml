@@ -21,6 +21,11 @@ function add_token(combatant, token_params){
 		if(is_string(token_params[? "turn_script"])){
 			turn_script = token_params[? "turn_script"];
 		}
+		if(token_params[? "defender"]){
+			defender = true;
+		}else{
+			defender = false;
+		}
 		
 	}
 	
