@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "card_scripts",
-    "path": "folders/Scripts/card_scripts.yy",
+    "name": "deck_handling",
+    "path": "folders/Scripts/deck_handling.yy",
   },
   "resourceVersion": "1.0",
-  "name": "do_damage",
+  "name": "act_on_card",
   "tags": [],
   "resourceType": "GMScript",
 }

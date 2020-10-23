@@ -4,8 +4,8 @@ function handle_enemy_turn(){
 	var moves_arry = ["attack", "token", "multiplier", "status"];
 	var moves = ds_list_create();
 	//ds_list_add(moves, "attack");
-	ds_list_add(moves, "multi_attack");
-	//ds_list_add(moves, "token");
+	//ds_list_add(moves, "multi_attack");
+	ds_list_add(moves, "token");
 	//ds_list_add(moves, "multiplier");
 	//ds_list_add(moves, "status");
 	ds_list_shuffle(moves);
@@ -49,6 +49,9 @@ function handle_enemy_turn(){
 			token_params[? "turn_script"] = "logos_heal";
 			token_params[? "power"] = 1;
 			token_params[? "time_to_live"] = 1;
+			if(random(2) >= 1){
+				token_params[? "defender"] = true;
+			}
        
 			add_token(opponent_obj, token_params);
 			

@@ -2,6 +2,29 @@
   "cards": [
     {
       "cost": 1,
+      "type": "logos",
+      "power": 3,
+      "face_text": "big damage\nbut fades after use",
+      "needs_target": true,
+      "script": "temp_attack",
+      "outro_script": "animate_slash",
+      "cleanup_script": "no_discard_cleanup",
+      "script_params": {}
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "do 1 damage 3 times",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 1,
       "type": "flirt",
       "power": 0,
       "face_text": "flirt token",
@@ -59,18 +82,9 @@
     {
       "cost": 1,
       "type": "logos",
-      "power": 3,
-      "face_text": "big damage\nbut fades after use",
-      "script": "temp_attack",
-      "outro_script": "animate_slash",
-      "cleanup_script": "no_discard_cleanup",
-      "script_params": {}
-    },
-    {
-      "cost": 1,
-      "type": "logos",
       "power": 1,
       "face_text": "I'm card #1!",
+      "needs_target": true,
       "script": "temp_attack",
       "script_params": {}
     },
@@ -79,20 +93,10 @@
       "type": "logos",
       "power": 1,
       "face_text": "1 damage\nstays in hand",
+      "needs_target": true,
       "script": "temp_attack",
       "script_params": {
         "stays": true
-      }
-    },
-    {
-      "cost": 2,
-      "type": "logos",
-      "power": 1,
-      "face_text": "do 1 damage 3 times",
-      "script": "multi_hit_attack",
-      "script_params": {
-        "hits": 3,
-        "counter": 0
       }
     },
     {
@@ -100,6 +104,7 @@
       "type": "logos",
       "power": 1,
       "face_text": "1 damage\nstays in hand",
+      "needs_target": true,
       "script": "temp_attack",
       "script_params": {
         "stays": true
@@ -110,6 +115,7 @@
       "type": "logos",
       "power": 1,
       "face_text": "do 1 damage 3 times",
+      "needs_target": true,
       "script": "multi_hit_attack",
       "script_params": {
         "hits": 3,

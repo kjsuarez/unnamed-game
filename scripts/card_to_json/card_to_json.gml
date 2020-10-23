@@ -11,7 +11,7 @@ function card_to_json(argument0) {
 	metadata[? "script_params"] = card_inst.script_params;
 	metadata[? "outro_script"] = card_inst.outro_script;
 	metadata[? "cleanup_script"] = card_inst.cleanup_script;
-	//metadata[? "needs_target"] = card_inst.needs_target;
+	metadata[? "needs_target"] = card_inst.needs_target;
 
 	return metadata;
 
