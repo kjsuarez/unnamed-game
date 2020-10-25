@@ -1,0 +1,1 @@
+global.opponent_coor = [1280, 160];

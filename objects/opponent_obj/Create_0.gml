@@ -1,5 +1,6 @@
-/// @description Insert description here
+/// @description Generic opponent setup
 
+//hp values and stats
 logos_health = 0;
 ethos_health = 0;
 pathos_health = 0;
@@ -25,6 +26,8 @@ tokens = ds_list_create();
 statuses = ds_list_create();
 temp_modifier = 1;
 
+
+// temporary additions
 temp_status_inst = instance_create_depth(initial_status_location[0], initial_status_location[1], -10, status_obj);
 with(temp_status_inst){
 	image_xscale = 2;
@@ -51,8 +54,16 @@ with(yyy_status_inst){
 ds_list_add(statuses, temp_status_inst);
 //ds_list_add(statuses, yyy_status_inst);
 
+
+//turn order params
 my_turn = false;
 thinking = 0;
 animating = false;
 status_thinking = 0;
+
 name_str = "opponent";
+
+opponent_name = "Generic Opponent";
+
+image_xscale = -5.5;
+image_yscale = 6;

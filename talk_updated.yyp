@@ -121,10 +121,10 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"fight_zone","path":"rooms/fight_zone/fight_zone.yy",},
-    {"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},
     {"name":"map_room","path":"rooms/map_room/map_room.yy",},
+    {"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},
     {"name":"base_encounter_room","path":"rooms/base_encounter_room/base_encounter_room.yy",},
+    {"name":"fight_zone","path":"rooms/fight_zone/fight_zone.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
