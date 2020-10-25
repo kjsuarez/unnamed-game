@@ -8,7 +8,7 @@ flirt_health = 0;
 friend_health = 0;
 agro_health = 0;
 
-logos_stat = 0.8;
+logos_stat = 1.0;
 ethos_stat = 1.0;
 pathos_stat = 1.0;
 flirt_stat = 1.0;
