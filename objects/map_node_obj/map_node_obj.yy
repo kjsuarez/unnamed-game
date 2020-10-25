@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "text_box_spr",
-    "path": "sprites/text_box_spr/text_box_spr.yy",
+    "name": "map_node_spr",
+    "path": "sprites/map_node_spr/map_node_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"text_box_obj","path":"objects/text_box_obj/text_box_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "encounter_objects",
-    "path": "folders/Objects/encounter_objects.yy",
+    "name": "map_objects",
+    "path": "folders/Objects/map_objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "text_box_obj",
+  "name": "map_node_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

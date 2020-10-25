@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "encounter_objects",
+    "path": "folders/Objects/encounter_objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "hand_obj",

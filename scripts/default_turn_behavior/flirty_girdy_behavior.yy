@@ -6,7 +6,7 @@
     "path": "folders/Scripts/enemy_scripts/turn_behavior.yy",
   },
   "resourceVersion": "1.0",
-  "name": "handle_enemy_turn",
+  "name": "flirty_girdy_behavior",
   "tags": [],
   "resourceType": "GMScript",
 }

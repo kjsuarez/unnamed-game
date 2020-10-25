@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "opponents",
+    "path": "folders/Objects/encounter_objects/opponents.yy",
   },
   "resourceVersion": "1.0",
   "name": "opponent_obj",

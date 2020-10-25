@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e1fd80b6-769d-4687-9149-d8c5bc45756e","path":"sprites/profile_standin/profile_standin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e1fd80b6-769d-4687-9149-d8c5bc45756e","path":"sprites/profile_standin/profile_standin.yy",},"LayerId":{"name":"9313ef51-686a-48e0-a658-fa0479e0901a","path":"sprites/profile_standin/profile_standin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"profile_standin","path":"sprites/profile_standin/profile_standin.yy",},"resourceVersion":"1.0","name":"e1fd80b6-769d-4687-9149-d8c5bc45756e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"16f50130-c476-42bf-afea-f7fedcb916f0","path":"sprites/flirty_standin/flirty_standin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"16f50130-c476-42bf-afea-f7fedcb916f0","path":"sprites/flirty_standin/flirty_standin.yy",},"LayerId":{"name":"63fe0595-840d-4ac6-8c3c-67e66d6f5bbf","path":"sprites/flirty_standin/flirty_standin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"flirty_standin","path":"sprites/flirty_standin/flirty_standin.yy",},"resourceVersion":"1.0","name":"16f50130-c476-42bf-afea-f7fedcb916f0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"profile_standin","path":"sprites/profile_standin/profile_standin.yy",},
+    "spriteId": {"name":"flirty_standin","path":"sprites/flirty_standin/flirty_standin.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"eb3e22f2-95d4-46d1-a618-4fc3a90e2082","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1fd80b6-769d-4687-9149-d8c5bc45756e","path":"sprites/profile_standin/profile_standin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9c3e3aff-613f-456e-83cd-8c11d17e9228","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16f50130-c476-42bf-afea-f7fedcb916f0","path":"sprites/flirty_standin/flirty_standin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,21 +58,21 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"profile_standin","path":"sprites/profile_standin/profile_standin.yy",},
+    "parent": {"name":"flirty_standin","path":"sprites/flirty_standin/flirty_standin.yy",},
     "resourceVersion": "1.3",
-    "name": "profile_standin",
+    "name": "flirty_standin",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9313ef51-686a-48e0-a658-fa0479e0901a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"63fe0595-840d-4ac6-8c3c-67e66d6f5bbf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "profile_standin",
+  "name": "flirty_standin",
   "tags": [],
   "resourceType": "GMSprite",
 }

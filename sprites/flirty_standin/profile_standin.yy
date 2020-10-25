@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"profile_standin","path":"sprites/profile_standin/profile_standin.yy",},
     "resourceVersion": "1.3",
-    "name": "profile_standin",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
