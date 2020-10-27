@@ -96,8 +96,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a2cbdc1-7a58-4a22-b97d-59b01f3433c2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "encounter sprites",
+    "path": "folders/Sprites/encounter sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "slash_spr",

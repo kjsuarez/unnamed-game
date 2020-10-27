@@ -6,7 +6,7 @@ function set_card_target(target){
 			card_inst.target = target;
 			card_inst.selecting_target = false;
 			player_obj.selecting_target = false;
-			act_on_card(card_inst);
+			handle_card(card_inst);
 		}
     }
 }

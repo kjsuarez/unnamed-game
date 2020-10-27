@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d8cc2209-481d-4921-99a0-89034507173d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "map sprites",
+    "path": "folders/Sprites/map sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "map_node_spr",

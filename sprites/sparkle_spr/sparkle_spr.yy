@@ -84,8 +84,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c590e5da-0165-4563-98e3-a1514951aa61","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "encounter sprites",
+    "path": "folders/Sprites/encounter sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sparkle_spr",

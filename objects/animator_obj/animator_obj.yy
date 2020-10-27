@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "encounter_objects",
-    "path": "folders/Objects/encounter_objects.yy",
+    "name": "metadata_objects",
+    "path": "folders/Objects/encounter_objects/metadata_objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "animator_obj",

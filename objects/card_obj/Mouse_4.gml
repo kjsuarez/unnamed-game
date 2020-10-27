@@ -9,7 +9,7 @@ if(global.turn == "player" &&  player_obj.selecting_target != true){
 				player_obj.selecting_target = true;
 				selecting_target = true;
 			} else {
-				act_on_card(self);
+				handle_card(self);
 			}
 	}
 }

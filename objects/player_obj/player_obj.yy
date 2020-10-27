@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "encounter_objects",
-    "path": "folders/Objects/encounter_objects.yy",
+    "name": "player_characters",
+    "path": "folders/Objects/encounter_objects/player_characters.yy",
   },
   "resourceVersion": "1.0",
   "name": "player_obj",

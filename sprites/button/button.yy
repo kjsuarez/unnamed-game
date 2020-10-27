@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5b782e47-1f9b-42f7-b8b4-ecf3fa503ec7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "encounter sprites",
+    "path": "folders/Sprites/encounter sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "button",

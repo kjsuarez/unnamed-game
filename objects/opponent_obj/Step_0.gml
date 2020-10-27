@@ -18,7 +18,8 @@ if(!animating){
 	if(global.turn == "opponent"){
 		thinking += 1;
 		if(thinking > 50){
-			handle_enemy_turn()
+			handle_enemy_speech();
+			//handle_enemy_turn()
 			if(is_string(win_condition_met())){
 				room_restart();
 			}

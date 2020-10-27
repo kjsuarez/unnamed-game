@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f0db904b-c751-4159-a91d-9c9169f1a84d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "encounter sprites",
+    "path": "folders/Sprites/encounter sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "card_slash",

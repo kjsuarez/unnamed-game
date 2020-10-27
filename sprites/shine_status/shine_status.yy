@@ -100,8 +100,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"80ce65aa-e5bc-4f51-933a-353ac299009d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "encounter sprites",
+    "path": "folders/Sprites/encounter sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "shine_status",

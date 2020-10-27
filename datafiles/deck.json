@@ -5,6 +5,7 @@
       "type": "logos",
       "power": 3,
       "face_text": "big damage\nbut fades after use",
+      "speech": "bla bla bla",
       "needs_target": true,
       "script": "temp_attack",
       "outro_script": "animate_slash",

@@ -27,7 +27,10 @@ function deal_new_card(inst_x, inst_y, inst_z) {
 			} else {
 				needs_target = false;
 			}
-	
+			
+			if(!is_undefined(metadata[? "speech"])){ 
+				speech =  metadata[? "speech"];
+			}
 			
 		}
 		ds_list_add(hand_obj.hand, card_inst);

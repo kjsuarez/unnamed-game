@@ -20,6 +20,7 @@ multplier_y = 448;
 
 initial_token_location = [x - 100, y];
 initial_status_location = [x - 60, y + 275];
+speech_coor = [1025, 130];
 y_offset = 60;
 
 tokens = ds_list_create();

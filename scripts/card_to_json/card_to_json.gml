@@ -12,7 +12,9 @@ function card_to_json(argument0) {
 	metadata[? "outro_script"] = card_inst.outro_script;
 	metadata[? "cleanup_script"] = card_inst.cleanup_script;
 	metadata[? "needs_target"] = card_inst.needs_target;
-
+	if(variable_instance_exists(card_inst, "speech")){
+		metadata[? "speech"] = card_inst.speech;
+	}
 	return metadata;
 
 

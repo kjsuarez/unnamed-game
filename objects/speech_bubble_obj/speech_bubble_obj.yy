@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "speech_bubble_spr",
+    "path": "sprites/speech_bubble_spr/speech_bubble_spr.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -8,7 +11,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -18,16 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"token_set_obj","path":"objects/token_set_obj/token_set_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,"parent":{"name":"speech_bubble_obj","path":"objects/speech_bubble_obj/speech_bubble_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "metadata_objects",
-    "path": "folders/Objects/encounter_objects/metadata_objects.yy",
+    "name": "encounter_objects",
+    "path": "folders/Objects/encounter_objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "token_set_obj",
+  "name": "speech_bubble_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
