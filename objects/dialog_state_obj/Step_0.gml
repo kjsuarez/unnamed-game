@@ -6,7 +6,7 @@ if(active_speech_bubble == false){
 		active_speech_bubble = true;
 	}
 	if(speak_from_enemy == true){
-		add_speech_bubble(opponent_obj, "enemy text");
+		add_speech_bubble(opponent_obj, enemy_speech_in_question);
 		active_speech_bubble = true;
 	}
 }

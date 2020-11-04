@@ -68,3 +68,4 @@ opponent_name = "Generic Opponent";
 
 image_xscale = -5.5;
 image_yscale = 6;
+behavior_choice = false;

@@ -1,0 +1,29 @@
+{
+  "encounters": [
+    {
+      
+      "opponent": "flirty_gerdy",
+      "context": "at_a_party",
+      "monologue": [
+        [
+          "So how do you know derek?",
+          "Come here often? haha just kidding"
+        ],
+        [
+          "Oh my god I love your hair! Can I touch it?",
+          ""
+        ],
+      ],
+      "take_heavy_dmg logic": [
+        "huh, I never thought of it like that.",
+        "what an unsexy statement.",
+        "You know I never thought of it that way",
+        "that's a good point",
+        "live long and prosper you fucking moron"
+      ],
+      "take_heavy_dmg ethos": [
+
+      ]
+    }
+  ]
+}

@@ -15,7 +15,12 @@ function cleanup_speech_bubble(bubble_inst){
 	
 	if(bubble_inst.owner == opponent_obj){
 		dialog_state_obj.speak_from_enemy = false;
-		handle_enemy_turn();
+		dialog_state_obj.enemy_speech_in_question = "...";
+		// send opponent act behavior with choice message
+		var actionScriptToCall = asset_get_index(opponent_obj.act_behavior_script);
+		var choice = script_execute(actionScriptToCall, opponent_obj.behavior_choice);
+
+		//handle_enemy_turn();
 	}
 	
 }
