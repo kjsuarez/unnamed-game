@@ -7,4 +7,5 @@ draw_set_colour(c_red);
 outro_status = "ready";
 needs_target = false;
 selecting_target = false;
+answering_question = false
 target = false;

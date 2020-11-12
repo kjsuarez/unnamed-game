@@ -7,7 +7,12 @@ function flirty_girdy_choose_behavior(){
 	//ds_list_add(moves, "multiplier");
 	//ds_list_add(moves, "status");
 	ds_list_shuffle(moves);
-	return moves[| 0];
+	if(global.turn_number == 1){
+		return "question1"
+	} else {
+		return moves[| 0];
+	}
+	
 }
 
 function flirty_girdy_speech_behavior(current_move){
@@ -18,6 +23,24 @@ function flirty_girdy_speech_behavior(current_move){
 	
 	switch (current_move)
     {
+		case "question1":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_question = "want_shot";
+			dialog_state_obj.enemy_speech_in_question = "Wanna do a shot?";
+			break;
+			
+		case "drink_resp_no":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "BOOOO!";
+			dialog_state_obj.enemy_question = 0;
+			break;
+			
+		case "drink_resp_yes":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "Cheers!";
+			dialog_state_obj.enemy_question = 0;
+			break;	
+		
 		case "attack":
 			dialog_state_obj.speak_from_enemy = true;
 			dialog_state_obj.enemy_speech_in_question = "You cute.";
@@ -45,6 +68,23 @@ function flirty_girdy_speech_behavior(current_move){
 	}
 }
 
+function flirty_girdy_act_on_question(question, answer){
+	switch (question)
+    {
+		case "want_shot":
+			if(answer == true){
+				opponent_obj.behavior_choice = "drink_resp_yes";
+			} else {
+				opponent_obj.behavior_choice = "drink_resp_no";
+			}
+			flirty_girdy_speech_behavior(opponent_obj.behavior_choice);
+			break; 
+		default:
+		flirty_girdy_act_on_behavior("token");
+		break;
+	}
+}
+
 function flirty_girdy_act_on_behavior(current_move){
 //turn behavior:
 	
@@ -52,12 +92,23 @@ function flirty_girdy_act_on_behavior(current_move){
 	//show_debug_message("current move: " + current_move);
 	
 	switch (current_move)
-    {
+    {	
+		case "drink_resp_yes":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "question_card_execute_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+			break;
+		case "drink_resp_no":
+		
+			break;
 		case "attack":
 			var attack_script_params = ds_map_create();
 			attack_script_params[? "power"] = 2;
 			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
 			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
 			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
 			
 			//enemy_attack(2);

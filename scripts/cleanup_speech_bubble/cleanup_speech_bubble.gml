@@ -16,11 +16,13 @@ function cleanup_speech_bubble(bubble_inst){
 	if(bubble_inst.owner == opponent_obj){
 		dialog_state_obj.speak_from_enemy = false;
 		dialog_state_obj.enemy_speech_in_question = "...";
-		// send opponent act behavior with choice message
-		var actionScriptToCall = asset_get_index(opponent_obj.act_behavior_script);
-		var choice = script_execute(actionScriptToCall, opponent_obj.behavior_choice);
-
-		//handle_enemy_turn();
+		if(bubble_inst.question != false){
+			var questionScriptToCall = asset_get_index(opponent_obj.question_behavior_script);
+			var choice = script_execute(questionScriptToCall, dialog_state_obj.enemy_question, dialog_state_obj.question_response);
+		} else {
+			var actionScriptToCall = asset_get_index(opponent_obj.act_behavior_script);
+			var choice = script_execute(actionScriptToCall, opponent_obj.behavior_choice);
+		}
 	}
 	
 }

@@ -20,3 +20,4 @@ ds_list_add(phases, "opponent");
 ds_list_add(phases, "resolve_opponent_attack");
 
 global.turn = "player";
+global.turn_number = 0;

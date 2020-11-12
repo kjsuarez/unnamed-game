@@ -5,13 +5,15 @@ function next_phase(){
 	for(i=0; i < ds_list_size(encounter_state_obj.phases); i+=1;){
 		if(encounter_state_obj.phases[| i] == current_phase){
 			if( i == ds_list_size(encounter_state_obj.phases) - 1){
-				global.turn = encounter_state_obj.phases[| 0];
-				
-				break;
+				var new_phase = encounter_state_obj.phases[| 0];
 			}else{
-				global.turn = encounter_state_obj.phases[| i+1];
-				break;
+				var new_phase = encounter_state_obj.phases[| i+1];
 			}	
+			global.turn = new_phase;
+			if(new_phase == "player"){
+				global.turn_number += 1;
+			}
+			break;
 		}
 	}
 }

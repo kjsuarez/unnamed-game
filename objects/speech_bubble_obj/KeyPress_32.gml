@@ -1,3 +1,6 @@
 /// @description complete/close speech bubble
 
-cleanup_speech_bubble(self);
+
+if(question == 0){
+	cleanup_speech_bubble(self);
+}

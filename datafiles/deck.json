@@ -3,6 +3,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": true,
       "power": 3,
       "face_text": "big damage\nbut fades after use",
       "speech": "bla bla bla",
@@ -27,6 +28,7 @@
     {
       "cost": 1,
       "type": "flirt",
+      "binary_answer": false,
       "power": 0,
       "face_text": "flirt token",
       "script": "add_token_from_card",
@@ -42,6 +44,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": true,
       "power": 0,
       "face_text": "heal token",
       "script": "add_token_from_card",
@@ -56,6 +59,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": false,
       "power": 0,
       "face_text": "heal token",
       "script": "add_token_from_card",
@@ -70,6 +74,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": true,
       "power": 0,
       "face_text": "normal token",
       "script": "add_token_from_card",
@@ -83,6 +88,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": false,
       "power": 1,
       "face_text": "I'm card #1!",
       "needs_target": true,
@@ -92,6 +98,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": true,
       "power": 1,
       "face_text": "1 damage\nstays in hand",
       "needs_target": true,
@@ -103,6 +110,7 @@
     {
       "cost": 1,
       "type": "logos",
+      "binary_answer": false,
       "power": 1,
       "face_text": "1 damage\nstays in hand",
       "needs_target": true,
@@ -114,6 +122,7 @@
     {
       "cost": 2,
       "type": "logos",
+      "binary_answer": true,
       "power": 1,
       "face_text": "do 1 damage 3 times",
       "needs_target": true,

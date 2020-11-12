@@ -6,6 +6,7 @@ function card_to_json(argument0) {
 	metadata[? "cost"] = card_inst.cost;
 	metadata[? "power"] = card_inst.damage;
 	metadata[? "type"] = card_inst.type;
+	metadata[? "binary_answer"] = card_inst.binary_answer;
 	metadata[? "face_text"] = card_inst.details;
 	metadata[? "script"] = card_inst.script_name;
 	metadata[? "script_params"] = card_inst.script_params;

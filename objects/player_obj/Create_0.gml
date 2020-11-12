@@ -23,6 +23,7 @@ multplier_y = 100;
 
 my_turn = false;
 selecting_target = false;
+answering_question = false;
 
 initial_token_location = [300, 300];
 initial_status_location = [110, 290];

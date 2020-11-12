@@ -60,6 +60,7 @@
     {"id":{"name":"cleanup_token","path":"scripts/cleanup_token/cleanup_token.yy",},"order":13,},
     {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"order":0,},
     {"id":{"name":"all_statuses_finished","path":"scripts/all_statuses_finished/all_statuses_finished.yy",},"order":5,},
+    {"id":{"name":"question_card_execute_with_params","path":"scripts/question_card_execute_with_params/question_card_execute_with_params.yy",},"order":24,},
     {"id":{"name":"enemy_recursive_cleanup","path":"scripts/enemy_recursive_cleanup/enemy_recursive_cleanup.yy",},"order":7,},
     {"id":{"name":"flirty_girdy_behavior","path":"scripts/flirty_girdy_behavior/flirty_girdy_behavior.yy",},"order":1,},
     {"id":{"name":"opponent_obj","path":"objects/opponent_obj/opponent_obj.yy",},"order":1,},
@@ -103,6 +104,7 @@
     {"id":{"name":"remove_animator_from_child_list","path":"scripts/remove_animator_from_child_list/remove_animator_from_child_list.yy",},"order":5,},
     {"id":{"name":"base_encounter_room","path":"rooms/base_encounter_room/base_encounter_room.yy",},"order":3,},
     {"id":{"name":"act_on_card","path":"scripts/act_on_card/act_on_card.yy",},"order":10,},
+    {"id":{"name":"start_menu_room","path":"rooms/start_menu_room/start_menu_room.yy",},"order":4,},
     {"id":{"name":"map_room","path":"rooms/map_room/map_room.yy",},"order":2,},
     {"id":{"name":"multiplier_token_obj","path":"objects/multiplier_token_obj/multiplier_token_obj.yy",},"order":6,},
     {"id":{"name":"animator_obj","path":"objects/animator_obj/animator_obj.yy",},"order":0,},
@@ -128,10 +130,11 @@
     "children": [],
   },
   "RoomOrder": [
+    {"name":"start_menu_room","path":"rooms/start_menu_room/start_menu_room.yy",},
     {"name":"map_room","path":"rooms/map_room/map_room.yy",},
-    {"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},
     {"name":"base_encounter_room","path":"rooms/base_encounter_room/base_encounter_room.yy",},
     {"name":"fight_zone","path":"rooms/fight_zone/fight_zone.yy",},
+    {"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

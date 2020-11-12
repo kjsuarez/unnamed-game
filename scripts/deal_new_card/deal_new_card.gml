@@ -16,6 +16,7 @@ function deal_new_card(inst_x, inst_y, inst_z) {
 			damage = metadata[? "power"];
 			cost = metadata[? "cost"];
 			type = metadata[? "type"];
+			binary_answer = metadata[? "binary_answer"];
 			details = metadata[? "face_text"];
 			script_name = metadata[? "script"];
 			script_params = metadata[? "script_params"];
