@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "card_outros",
-    "path": "folders/Scripts/card_outros.yy",
+    "path": "folders/Scripts/encounter_scripts/card_outros.yy",
   },
   "resourceVersion": "1.0",
   "name": "animate_slash",

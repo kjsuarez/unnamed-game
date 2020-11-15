@@ -1,0 +1,69 @@
+{
+  "contexts": [
+    {
+      "context_id": "start",
+
+      "events": [
+        {
+          "id": "start-room",
+          "flag_needed": false,
+          "randomly_selectable": true,
+          "event_text": "You wake up to the sound of an old radio alarm clock. In just 8 days your girlfriend is leaving city x for town y. You know you want to be with this person, but you're not sure you're ready to leave.",
+          "possible_choices": [
+            {
+              "id": "surf-internet",
+              "display_text": "I don't really want to deal with this today, just like dick around online",
+              "responce_text": "You boot up the old computron and go for a ride on the chrome pony",
+              "flag_needed": false,
+              "new_context": "internet"
+            },
+            {
+              "id": "gig-economy",
+              "display_text": "Run a couple gigs for the local megacorp",
+              "responce_text": "Cash has been pretty short lately. You really don't want to but you should probably get out there and make some bread",
+              "flag_needed": false,
+              "new_context": "gigging"
+            },
+            {
+              "id": "go-walk",
+              "display_text": "Go for a walk",
+              "responce_text": "It's a beautiful day. You should try to enjoy your neighborhood while you still can.",
+              "flag_needed": false,
+              "new_context": "outside"
+            },
+            {
+              "id": "go-sleep",
+              "display_text": "Go back to sleep",
+              "responce_text": "I really don't want to deal with this. Back to sleep I go!"
+            }
+          ],
+          "choice_count": 2
+        }
+      ]
+    },
+    {
+      "context_id": "internet",
+
+      "events": [
+        {
+          "id": "flame war",
+          "flag_needed": false,
+          "randomly_selectable": true,
+          "repeatable": true,
+          "event_text": "You get stuck in a totally pointless flamewar.",
+          "possible_choices": [
+            {
+              "id": "engage-flamewar",
+              "display_text": "This dumb man is wrong and I *need* him to know it.",
+              "responce_text": "What a stupid jerk lets do this.",
+              "encounter": "flirty_gerdy_obj",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        }
+      ]
+    }
+
+  ]
+}
