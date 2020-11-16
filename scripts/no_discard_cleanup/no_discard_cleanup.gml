@@ -23,7 +23,7 @@ function no_discard_cleanup(card_inst){
 		//instance_destroy(card_inst);
 		hand_obj.card_in_action = false;
 		if(is_string(win_condition_met())){
-			room_restart();
+			handle_encounter_conclusion();
 		}
 	}
 	

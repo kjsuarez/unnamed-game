@@ -21,7 +21,7 @@ if(!animating){
 			
 			handle_enemy_turn()
 			if(is_string(win_condition_met())){
-				room_restart();
+				handle_encounter_conclusion();
 			}
 			thinking = 0;	
 			deal_hand();

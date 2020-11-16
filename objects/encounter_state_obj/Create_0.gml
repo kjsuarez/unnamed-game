@@ -21,3 +21,6 @@ ds_list_add(phases, "resolve_opponent_attack");
 
 global.turn = "player";
 global.turn_number = 0;
+
+win_event = global.current_win_event;
+lose_event = global.current_lose_event;

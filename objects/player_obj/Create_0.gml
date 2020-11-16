@@ -1,5 +1,5 @@
 /// @description Insert description here
-logos_health = 4;
+logos_health = 0;
 ethos_health = 0;
 pathos_health = 0;
 flirt_health = 0;

@@ -57,6 +57,40 @@
               "display_text": "This dumb man is wrong and I *need* him to know it.",
               "responce_text": "What a stupid jerk lets do this.",
               "encounter": "flirty_gerdy_obj",
+              "win_event": "won-flamewar",
+              "lose_event": "lost-flamewar",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "won-flamewar",
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "You totally made that internet stranger cry.",
+          "possible_choices": [
+            {
+              "id": "engage-flamewar",
+              "display_text": "Damn straight.",
+              "responce_text": "How dare he have a marginally different oppinion than you.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "lost-flamewar",
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "You tried to shout down a digital shitlord but his mind was utterly impenetrable",
+          "possible_choices": [
+            {
+              "id": "engage-flamewar",
+              "display_text": "Whatever.",
+              "responce_text": "He's totally not even worth it.",
               "flag_needed": false
             }
           ],

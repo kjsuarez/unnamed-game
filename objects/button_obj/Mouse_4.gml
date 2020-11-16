@@ -3,7 +3,8 @@
 
 if(global.turn == "player"){
 	if(is_string(win_condition_met())){
-		room_restart();
+		//room_restart();
+		handle_encounter_conclusion();
 	}
 	clean_up_statuses(player_obj);
 	player_obj.retorical_points = 3

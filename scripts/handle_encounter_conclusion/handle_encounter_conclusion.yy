@@ -6,7 +6,7 @@
     "path": "folders/Scripts/encounter_scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "win_condition_met",
+  "name": "handle_encounter_conclusion",
   "tags": [],
   "resourceType": "GMScript",
 }

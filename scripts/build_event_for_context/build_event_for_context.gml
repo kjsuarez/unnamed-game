@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function build_event_for_context(context_str){
 
 
@@ -19,7 +17,13 @@ function build_event_for_context(context_str){
 		}
 		// pull start room event, build it into an object
 		ds_list_shuffle(possible_events);
-		var current_event_metadata = possible_events[| 0];
+		for(var i = 0; i < ds_list_size(possible_events); i++;){
+			if(possible_events[| i][? "randomly_selectable"] == true){
+				var current_event_metadata = possible_events[| i];
+				break;
+			}
+		}
+		
 		// pull a number of choices equal to choice_count, build them into choices
 		var choice_metadata_array = ds_list_create();
 		var choice_array = ds_list_create();
@@ -36,11 +40,14 @@ function build_event_for_context(context_str){
 			with(choice_inst){
 				display_text = choice_metadata[? "display_text"];
 				responce_text = choice_metadata[? "responce_text"];
+				
 				if(is_string(choice_metadata[? "new_context"])){
 					new_context = choice_metadata[? "new_context"];
 				}
 				if(is_string(choice_metadata[? "encounter"])){
 					encounter = choice_metadata[? "encounter"];
+					win_event = choice_metadata[? "win_event"];
+					lose_event = choice_metadata[? "lose_event"];
 				}
 			}
 			ds_list_add(choice_array, choice_inst);

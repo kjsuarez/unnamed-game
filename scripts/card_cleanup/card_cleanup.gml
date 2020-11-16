@@ -37,7 +37,7 @@ function card_cleanup(card_inst){
 			hand_obj.card_in_action = false;
 			player_obj.answering_question = false;
 			if(is_string(win_condition_met())){
-				room_restart();
+				handle_encounter_conclusion();
 			}
 		}
 		
