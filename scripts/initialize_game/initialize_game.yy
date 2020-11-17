@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "encounter_scripts",
-    "path": "folders/Scripts/encounter_scripts.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "set_phase_to_resolve_attack_from",
+  "name": "initialize_game",
   "tags": [],
   "resourceType": "GMScript",
 }

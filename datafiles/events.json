@@ -6,6 +6,7 @@
       "events": [
         {
           "id": "start-room",
+          "no_step": true,
           "flag_needed": false,
           "randomly_selectable": true,
           "event_text": "You wake up to the sound of an old radio alarm clock. In just 8 days your girlfriend is leaving city x for town y. You know you want to be with this person, but you're not sure you're ready to leave.",
@@ -66,13 +67,14 @@
         },
         {
           "id": "won-flamewar",
+          "no_step": true,
           "flag_needed": false,
           "randomly_selectable": false,
           "repeatable": true,
           "event_text": "You totally made that internet stranger cry.",
           "possible_choices": [
             {
-              "id": "engage-flamewar",
+              "id": "won-flamewar",
               "display_text": "Damn straight.",
               "responce_text": "How dare he have a marginally different oppinion than you.",
               "flag_needed": false
@@ -82,16 +84,73 @@
         },
         {
           "id": "lost-flamewar",
+          "no_step": true,
           "flag_needed": false,
           "randomly_selectable": false,
           "repeatable": true,
           "event_text": "You tried to shout down a digital shitlord but his mind was utterly impenetrable",
           "possible_choices": [
             {
-              "id": "engage-flamewar",
+              "id": "lost-flamewar",
               "display_text": "Whatever.",
               "responce_text": "He's totally not even worth it.",
               "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "self-loathing",
+          "boss_event": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": false,
+          "event_text": "After frittering away a lovely day and doom scrolling well into the night you find yourself consumed by a righteous self-loathing.",
+          "possible_choices": [
+            {
+              "id": "engage-selfloathing",
+              "display_text": "Confront this irrational feeling.",
+              "responce_text": "You muster your energies to try and face down the demons you've been using the internet to ignore.",
+              "encounter": "flirty_gerdy_obj",
+              "win_event": "won-selfloathing",
+              "lose_event": "lost-selfloathing",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "won-selfloathing",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "You totally beat your own ass metaphysically speaking.",
+          "possible_choices": [
+            {
+              "id": "won-selfloathing",
+              "display_text": "That's kinda nice",
+              "responce_text": "Yeah no, you've become a better well rounded person; and slightly less addicted to the internet.",
+              "flag_needed": false,
+              "new_context": "start"
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "lost-selfloathing",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "Try as you might you can't seem to win this argument with yourself. Pathetic really.",
+          "possible_choices": [
+            {
+              "id": "lost-selfloathing",
+              "display_text": "Hey fuck you man!",
+              "responce_text": "Better luck next time I guess.",
+              "flag_needed": false,
+              "new_context": "start"
             }
           ],
           "choice_count": 1
