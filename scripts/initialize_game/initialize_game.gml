@@ -8,5 +8,5 @@ function initialize_game(){
 	global.next_event = false;
 	global.opponent_coor = [1280, 160];
 	global.steps_to_boss = 1;
-	global.total_days = 3;
+	global.total_days = 2;
 }

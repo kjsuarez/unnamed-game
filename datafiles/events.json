@@ -156,6 +156,120 @@
           "choice_count": 1
         }
       ]
+    },
+    {
+      "context_id": "end",
+
+      "events": [
+        {
+          "id": "confrontation",
+          "boss_event": true,
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": true,
+          "event_text": "Today is the day you have been dreading. Your partner is expecting you to pack up and leave PsudoYork with her. Today she exepcts an answer. Will you commit to living your life with her, or will you stay in the city you love?",
+          "possible_choices": [
+            {
+              "id": "persuade",
+              "display_text": "Try to persuade her to stay here with you",
+              "responce_text": "You want to spend the rest of your life with this woman, but you know in your heart you'll never be happy where she's going. You have to convince her to stay.",
+              "encounter": "flirty_gerdy_obj",
+              "win_event": "she-stays",
+              "lose_event": "you-go-bad",
+              "flag_needed": false
+            },
+            {
+              "id": "easy way out",
+              "display_text": "Bite the bullet and tell her you'll go with her",
+              "responce_text": "In the end the choice was almost easy. You don't want to leave psudoyork but you are commited to this person. That's all there is to it.",
+              "flag_needed": false,
+              "last_choice": true
+            },
+            {
+              "id": "leave",
+              "display_text": "Tell her to leave without you",
+              "responce_text": "The last couple days have been a wake up call. You can't spend your life chasing someone elses dreams, It was never your choice to leave and you're not the one going to grad school. Telling her is hard but you have no other choice.",
+              "encounter": "flirty_gerdy_obj",
+              "win_event": "you-stay-good",
+              "lose_event": "you-stay-bad",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 3
+        },
+        {
+          "id": "she-stays",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "In the end she gives over to the idea completely. \"I got accepted to a really interesting program in PsudoYork anyway. I think I just needed to feel like I was taking control of my life. Leaving felt like the way to do that, but now I'm not so sure.\"",
+          "possible_choices": [
+            {
+              "id": "lost-selfloathing",
+              "display_text": "Is it selfish to bend the destiny oof the person you love?",
+              "responce_text": "Who can say. For once in your life just take the win.",
+              "flag_needed": false,
+              "last_event": true
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "you-go-bad",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "Try as you might you just can't persuade her to stay. She's furious that you would play around with this so close to her deadline. \n \"I already signed a lease! How could you do this?!\"",
+          "possible_choices": [
+            {
+              "id": "lost-selfloathing",
+              "display_text": "Beg forgiveness and ask if she'll still have you. It's your only option",
+              "responce_text": "Reluctantly she accepts, but you can tell this did some damage. She may not trust you as much as she did before.",
+              "flag_needed": false,
+              "last_event": true
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "you-stay-good",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "The conversation started tense, but after laying out how you felt, Sam honestly took it really well. People respect honesty and this people cares about you a lot.",
+          "possible_choices": [
+            {
+              "id": "lost-selfloathing",
+              "display_text": "\"I sure am great\"",
+              "responce_text": "You're relationship with Sam ends on a bittersweet note, but after an appropriate amount of time (6 months) you settle into a strong long-distance friendship. Change is good and you flourish.",
+              "flag_needed": false,
+              "last_event": true
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "you-stay-bad",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "This conversation does not go well and you both end up in bitter tears. For some time after you try to persuade yourself that you are better off without the person you were once closest to, but this attitude has unforseen consequences.",
+          "possible_choices": [
+            {
+              "id": "lost-selfloathing",
+              "display_text": "...",
+              "responce_text": "You spend a couple years confounded and hurt. When you eventually recover from what you would later consider a spiritual downturn, you are a different creature entirely. Change is good.",
+              "flag_needed": false,
+              "last_event": true
+            }
+          ],
+          "choice_count": 1
+        }
+      ]
     }
 
   ]

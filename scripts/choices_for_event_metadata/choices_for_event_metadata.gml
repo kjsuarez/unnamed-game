@@ -26,6 +26,9 @@ function choices_for_event_metadata(current_event_metadata){
 				win_event = choice_metadata[? "win_event"];
 				lose_event = choice_metadata[? "lose_event"];
 			}
+			if(current_event_metadata[? "last_event"] == true || choice_metadata[? "last_choice"] == true){
+				last_event = true;
+			}
 		}
 		ds_list_add(choice_array, choice_inst);
 	}

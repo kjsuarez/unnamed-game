@@ -19,16 +19,24 @@ if(!selected){
 	}
 } else {
 	
+	if(present_in(self, "last_event")){
+		room_goto(end_room);
+	}
 	
 	if(present_in(self, "new_context")){
 		instance_destroy(event_obj);
 		instance_destroy(choice_obj);
+		event_state_obj.transition = true;
 		global.game_state_step = 0;
 		global.context_boss_faced = false;
 		global.game_state_day += 1;
 		ds_list_add(global.game_state_previous_days, global.game_state_context);
-		global.game_state_context = new_context;
-		event_state_obj.transition = true;
+		
+		if(global.game_state_day >= global.total_days){
+			global.game_state_context = "end";
+		} else { 
+			global.game_state_context = new_context;	
+		}
 	} else{
 		if(present_in(self, "encounter")){
 			var win_case = win_event;
