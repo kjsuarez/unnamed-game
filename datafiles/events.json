@@ -47,10 +47,33 @@
 
       "events": [
         {
+          "id": "popup ad",
+          "flag_needed": false,
+          "randomly_selectable": true,
+          "repeatable": false,
+          "event_text": "You see a pop up ad. Normaly you would'nt click a pop up, but I'll be damned if those singles near you aren't very cute.",
+          "possible_choices": [
+            {
+              "id": "click-popup",
+              "display_text": "Click it.",
+              "responce_text": "\"Hotties here I come!\" The ad leads to a sketchy site with nary a hot single in sight. Your computer is acting a little slow, but you ignore it and click away.",
+              "flag_needed": false,
+              "set_flag": {"name": "has_virus", "state": true}
+            },
+            {
+              "id": "ignore-popup",
+              "display_text": "Ignore it.",
+              "responce_text": "Disappointing frankly. Fortune favors the bold you silly goose, try new things.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 2
+        },
+        {
           "id": "flame war",
           "flag_needed": false,
           "randomly_selectable": true,
-          "repeatable": true,
+          "repeatable": false,
           "event_text": "You get stuck in a totally pointless flamewar.",
           "possible_choices": [
             {

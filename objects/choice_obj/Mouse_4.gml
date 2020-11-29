@@ -17,8 +17,16 @@ if(!selected){
 			instance_destroy(current_choice);
 		}
 	}
+	if(present_in(self, "set_flag")){
+		
+		var flag_state = set_flag[? "state"];
+		var flag_name = set_flag[? "name"];
+		show_debug_message("adding flag " + flag_name);
+		global.game_state_flags[? flag_name] = flag_state;
+		show_debug_message("test: " + string(ds_map_keys_to_array(global.game_state_flags)))
+	}
 } else {
-	
+	//end game
 	if(present_in(self, "last_event")){
 		room_goto(end_room);
 	}

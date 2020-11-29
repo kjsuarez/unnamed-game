@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function build_specified_event(event_id){
 	var event_hash = load_json("events.json");
 	var contexts_array = event_hash[? "contexts"];

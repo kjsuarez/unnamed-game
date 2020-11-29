@@ -26,12 +26,17 @@ function build_event_for_context(context_str){
 			}
 		} else {
 			// pull random room event, build it into an object
+			var current_event_metadata = false;
 			ds_list_shuffle(possible_events);
 			for(var i = 0; i < ds_list_size(possible_events); i++;){
-				if(possible_events[| i][? "randomly_selectable"] == true){
-					var current_event_metadata = possible_events[| i];
+				
+				if(random_event_is_legal(possible_events[| i])){
+					current_event_metadata = possible_events[| i];
 					break;
 				}
+			}
+			if(current_event_metadata == false){
+				show_error("Ran out of random events to use in this context", true);
 			}
 		}
 		

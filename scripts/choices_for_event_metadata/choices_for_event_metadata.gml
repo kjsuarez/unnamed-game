@@ -29,6 +29,11 @@ function choices_for_event_metadata(current_event_metadata){
 			if(current_event_metadata[? "last_event"] == true || choice_metadata[? "last_choice"] == true){
 				last_event = true;
 			}
+			if(!is_undefined(choice_metadata[? "set_flag"])){
+				//ds_list_add(global.game_state_flags, choice_metadata[? "set_flag"]) 
+				set_flag = choice_metadata[? "set_flag"]
+				show_debug_message("adding set_flag variable to choice")
+			}
 		}
 		ds_list_add(choice_array, choice_inst);
 	}
