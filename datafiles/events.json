@@ -70,6 +70,55 @@
           "choice_count": 2
         },
         {
+          "id": "hacker-ransom",
+          "flag_needed": {"name": "has_virus", "state": true},
+          "randomly_selectable": true,
+          "repeatable": false,
+          "event_text": "Suddenly your computer stutters and then blue screens. From your computer's internal speaker you hear a modulated voice- \"You got your self a real problem cuz.\"",
+          "possible_choices": [
+            {
+              "id": "engage-hacker",
+              "display_text": "Oh balls.",
+              "responce_text": "Your computer's been hacked and now this motherfucker is holding it hostage. You have litterally no money so your only option is to talk him out of it.",
+              "encounter": "flirty_gerdy_obj",
+              "win_event": "persuaded-hacker",
+              "lose_event": "annoyed-hacker",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "persuaded-hacker",
+          "randomly_selectable": false,
+          "repeatable": false,
+          "event_text": "Success! the hacker is so impressed with you that he unlockes your computer free of charge.",
+          "possible_choices": [
+            {
+              "id": "persuaded-hacker",
+              "display_text": "Well, almost free of charge",
+              "responce_text": "In the end he settled for a few choice pictures of your feet. Don't look a gift horse in the mouth.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "annoyed-hacker",
+          "randomly_selectable": false,
+          "repeatable": false,
+          "event_text": "Yeah no he wants cash and this is not a thing that you have. Not even almost.",
+          "possible_choices": [
+            {
+              "id": "annoyed-hacker",
+              "display_text": "huh.",
+              "responce_text": "At this rate your night is basically over. You no longer have access to the internet.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
           "id": "flame war",
           "flag_needed": false,
           "randomly_selectable": true,
