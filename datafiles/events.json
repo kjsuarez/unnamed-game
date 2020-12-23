@@ -129,7 +129,7 @@
               "id": "engage-flamewar",
               "display_text": "This dumb man is wrong and I *need* him to know it.",
               "responce_text": "What a stupid jerk lets do this.",
-              "encounter": "flirty_gerdy_obj",
+              "encounter": "flame_war_obj",
               "win_event": "won-flamewar",
               "lose_event": "lost-flamewar",
               "flag_needed": false

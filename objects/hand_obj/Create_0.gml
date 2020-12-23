@@ -8,5 +8,3 @@ hand = ds_list_create();
 
 card_counter = 0;
 card_in_action = false;
-
-deal_hand();

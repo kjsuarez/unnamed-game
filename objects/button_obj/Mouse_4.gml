@@ -7,6 +7,7 @@ if(global.turn == "player"){
 		handle_encounter_conclusion();
 	}
 	clean_up_statuses(player_obj);
+	
 	player_obj.retorical_points = 3
 	var instances_to_destroy = ds_list_create();
 	var indexes_to_delete = ds_list_create();

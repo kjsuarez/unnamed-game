@@ -15,12 +15,14 @@ flirt_stat = 1.0;
 friend_stat = 1.0;
 agro_stat = 1.0;
 
+intro_script = [];
+
 multplier_x = 992;
 multplier_y = 448;
 
 initial_token_location = [x - 100, y];
 initial_status_location = [x - 60, y + 275];
-speech_coor = [1025, 130];
+speech_coor = [875, 130];
 y_offset = 60;
 
 tokens = ds_list_create();
@@ -63,6 +65,7 @@ animating = false;
 status_thinking = 0;
 
 name_str = "opponent";
+standard_sprite = asset_get_index("profile_standin");
 
 opponent_name = "Generic Opponent";
 

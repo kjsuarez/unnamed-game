@@ -101,7 +101,7 @@ function flirty_girdy_act_on_behavior(current_move){
 			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
 			break;
 		case "drink_resp_no":
-		
+			question_card_execute_with_params(false, false);
 			break;
 		case "attack":
 			var attack_script_params = ds_map_create();

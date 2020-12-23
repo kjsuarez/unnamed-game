@@ -19,7 +19,10 @@ ds_list_add(phases, "opponent_tokens");
 ds_list_add(phases, "opponent");
 ds_list_add(phases, "resolve_opponent_attack");
 
-global.turn = "player";
+combat_starting = false;
+virgin = true;
+
+global.turn = false; //"player"
 global.turn_number = 0;
 
 win_event = global.current_win_event;

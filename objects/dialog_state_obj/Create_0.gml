@@ -7,3 +7,5 @@ enemy_speech_in_question = "...";
 speak_from_card = false;
 respond_to_card = false;
 card_in_question = false;
+intro_index = 0;
+intro_in_progress = false;

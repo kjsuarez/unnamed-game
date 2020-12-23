@@ -1,7 +1,11 @@
 /// @description Insert description here
 
+
 if(!animating){
 	if(global.turn == "opponent_statuses"){
+		var thing_to_look_at = statuses_that_need_handling(self);
+		var second_thing = all_statuses_finished(self);
+		
 		if(ds_list_size(statuses_that_need_handling(self)) > 0 && !all_statuses_finished(self)){
 			handle_statuses(self);
 		}else{

@@ -16,4 +16,5 @@ function next_phase(){
 			break;
 		}
 	}
+	
 }
