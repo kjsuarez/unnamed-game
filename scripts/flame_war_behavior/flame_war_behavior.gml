@@ -51,16 +51,49 @@ function flame_war_speech_behavior(current_move){
 		case "res_1_1":
 			dialog_state_obj.speak_from_enemy = true;
 			dialog_state_obj.enemy_speech_in_question = "this is rich";
+			opponent_obj.sprite_index = nerd_standin_angry_spr;
 			break;
 			
 		case "res_1_2":
 			dialog_state_obj.speak_from_enemy = true;
 			dialog_state_obj.enemy_speech_in_question = "relax snowflake";
+			opponent_obj.sprite_index = nerd_standin_angry_spr;
 			break;
 			
 		case "res_1_3":
 			dialog_state_obj.speak_from_enemy = true;
 			dialog_state_obj.enemy_speech_in_question = "I'm sorry but you're just wrong";
+			opponent_obj.sprite_index = nerd_standin_angry_spr;
+			break;
+			
+		case "res_2_1":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "I'm angry but I don't know how to express it!";
+			break;
+			
+		case "res_2_2":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "Stop pulling the race card you bannana peel!";
+			break;
+			
+		case "res_2_3":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "SJW! SJW! SJW! SJW! SJW!";
+			break;
+			
+		case "res_3_1":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "*incoherent screeching*";
+			break;
+			
+		case "res_3_2":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "...OMNES ENIM IUCUNDUM MOTUM, QUO SENSUS HILARETUR. ID SEXTILIUS FACTUM NEGABAT. APUD CETEROS AUTEM PHILOSOPHOS, QUI QUAESIVIT ALIQUID, TACET; EST ENIM EFFECTRIX MULTARUM ET MAGNARUM VOLUPTATUM. SED NIMIS MULTA. NIHIL ILLINC HUC PERVENIT...";
+			break;
+			
+		case "res_3_3":
+			dialog_state_obj.speak_from_enemy = true;
+			dialog_state_obj.enemy_speech_in_question = "*Just a slur*";
 			break;
 		/**
 		case "question1":
@@ -229,15 +262,16 @@ function flame_war_act_on_behavior(current_move){
 			break;
 	}
 }
+/*
 function flame_war_intro_script(){
 	
 	
 	var x1 = ds_map_create();
 	x1[? "speaker"] = opponent_obj;
-	x1[? "line"] = "This is just a test, do not be alarmed";
+	x1[? "line"] = "How dare you post a Lucky Charms® meme on this dedicated Captain Crunch® forum!";
 	var x2 = ds_map_create();
 	x2[? "speaker"] = player_obj;
-	x2[? "line"] = "rest assured, this is also a test";
+	x2[? "line"] = "Your opinios don't matter today and they have never ever mattered.";
 	
 	var intro_script = ds_list_create();
 	ds_list_add(intro_script, x1, x2);
@@ -246,3 +280,4 @@ function flame_war_intro_script(){
 	
 	return intro_script;
 }
+*/

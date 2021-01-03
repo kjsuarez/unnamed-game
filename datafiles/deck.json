@@ -18,6 +18,7 @@
       "type": "logos",
       "power": 1,
       "face_text": "do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
       "needs_target": true,
       "script": "multi_hit_attack",
       "script_params": {

@@ -1,5 +1,27 @@
 /// @description poop
 
+if(outro_in_progress == true && active_speech_bubble == false){
+	var script_length = ds_list_size(opponent_obj.intro_script);
+	show_debug_message("Type of outro_index: " + typeof(outro_index));
+	
+	if(outro_index < script_length){
+		var intro_script = opponent_obj.outro_script;
+		show_debug_message("Type of intro_script: " + typeof(intro_script));
+		var current_line = intro_script[| outro_index];
+		if(!is_undefined(current_line[? "sprite"])){
+			current_line[? "speaker"].sprite_index = current_line[? "sprite"];
+		}
+		
+		add_speech_bubble(current_line[? "speaker"], current_line[? "line"], false);
+		active_speech_bubble = true;
+		outro_index += 1
+	} else {
+		
+		end_encounter();
+	}
+	return
+}
+
 if(intro_in_progress == true && active_speech_bubble == false){
 	var script_length = ds_list_size(opponent_obj.intro_script);
 	show_debug_message("Type of intro_index: " + typeof(intro_index));

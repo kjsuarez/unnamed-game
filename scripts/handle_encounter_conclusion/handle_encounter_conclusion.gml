@@ -1,11 +1,21 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function handle_encounter_conclusion(){
 	var victor = win_condition_met();
 	if(victor == "player"){
-		global.next_event = encounter_state_obj.win_event;
+		if(!is_undefined(opponent_obj.defeat_script)){
+			show_debug_message("opponent has lost, setting outro_in_progress to true")
+			opponent_obj.outro_script = opponent_obj.defeat_script;
+			dialog_state_obj.outro_in_progress = true;
+		} else {
+			end_encounter();
+		}
+		
 	} else {
-		global.next_event = encounter_state_obj.lose_event;
+		if(!is_undefined(opponent_obj.victory_script)){
+			opponent_obj.outro_script = opponent_obj.victory_script;
+			dialog_state_obj.outro_in_progress = true;
+		} else {
+			end_encounter();
+		}
 	}	
-	room_goto(event_room);
+	
 }

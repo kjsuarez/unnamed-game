@@ -28,6 +28,7 @@
     {"id":{"name":"build_event_for_context","path":"scripts/build_event_for_context/build_event_for_context.yy",},"order":1,},
     {"id":{"name":"remove_card_from_hand_array","path":"scripts/remove_card_from_hand_array/remove_card_from_hand_array.yy",},"order":7,},
     {"id":{"name":"shuffle_discard_in","path":"scripts/shuffle_discard_in/shuffle_discard_in.yy",},"order":4,},
+    {"id":{"name":"end_encounter","path":"scripts/end_encounter/end_encounter.yy",},"order":20,},
     {"id":{"name":"default_turn_behavior","path":"scripts/default_turn_behavior/default_turn_behavior.yy",},"order":2,},
     {"id":{"name":"tokens_for","path":"scripts/tokens_for/tokens_for.yy",},"order":4,},
     {"id":{"name":"statuses_that_need_handling","path":"scripts/statuses_that_need_handling/statuses_that_need_handling.yy",},"order":2,},
@@ -57,6 +58,7 @@
     {"id":{"name":"clean_up_statuses","path":"scripts/clean_up_statuses/clean_up_statuses.yy",},"order":4,},
     {"id":{"name":"event_room","path":"rooms/event_room/event_room.yy",},"order":5,},
     {"id":{"name":"player_attempt_direct_damage","path":"scripts/player_attempt_direct_damage/player_attempt_direct_damage.yy",},"order":9,},
+    {"id":{"name":"flame_war_background_spr","path":"sprites/flame_war_background_spr/flame_war_background_spr.yy",},"order":0,},
     {"id":{"name":"enemy_multi_hit","path":"scripts/enemy_multi_hit/enemy_multi_hit.yy",},"order":5,},
     {"id":{"name":"event_obj","path":"objects/event_obj/event_obj.yy",},"order":1,},
     {"id":{"name":"player_damage_for","path":"scripts/player_damage_for/player_damage_for.yy",},"order":14,},
@@ -203,6 +205,7 @@
     {"folderPath":"folders/Scripts/encounter_scripts.yy","order":26,"resourceVersion":"1.0","name":"encounter_scripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/event_scripts.yy","order":27,"resourceVersion":"1.0","name":"event_scripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/enemy_scripts.yy","order":0,"resourceVersion":"1.0","name":"enemy_scripts","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/backgrounds.yy","order":17,"resourceVersion":"1.0","name":"backgrounds","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

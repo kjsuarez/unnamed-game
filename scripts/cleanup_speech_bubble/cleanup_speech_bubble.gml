@@ -4,7 +4,7 @@ function cleanup_speech_bubble(bubble_inst){
 	instance_destroy(bubble_inst);
 	dialog_state_obj.active_speech_bubble = false;
 	
-	if(dialog_state_obj.intro_in_progress){
+	if(dialog_state_obj.intro_in_progress || dialog_state_obj.outro_in_progress){
 		bubble_inst.owner.sprite_index = bubble_inst.owner.standard_sprite;
 	} else {
 		if(bubble_inst.owner == player_obj){
