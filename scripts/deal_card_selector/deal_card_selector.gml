@@ -1,7 +1,8 @@
 function deal_card_selector(inst_x, inst_y, inst_z){
 	//show_debug_message("");
-
-	var var_metadata = card_selector_menu_obj.all_cards_array[| 0];
+	var all_cards = card_selector_menu_obj.all_cards_array;
+	ds_list_shuffle(all_cards);
+	var var_metadata = all_cards[| irandom(ds_list_size(all_cards) - 1)];
 		
 	var card_inst = instance_create_depth(inst_x, inst_y, inst_z, card_selector_obj);
 	with(card_inst){
