@@ -21,6 +21,7 @@ function deal_hand() {
 	}
 	
 	for (var i = 0; i < number_of_cards_to_draw; ++i;){
+		
 		card_x = hand_obj.initial_card_location[0] + (hand_obj.x_offset * (ds_list_size(hand_obj.hand)));
 		card_y = hand_obj.initial_card_location[1];
 		deal_new_card(card_x, card_y, 10);

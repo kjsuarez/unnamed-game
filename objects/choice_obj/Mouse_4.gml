@@ -53,6 +53,7 @@ if(!selected){
 			instance_destroy(choice_obj);
 			// do the thing node object click does, but add metadata about what to do on victory/defeat.
 			var opponent_object = asset_get_index(encounter);
+			show_debug_message("starting encounter: " + encounter)
 			enter_encounter(opponent_object, win_case, lose_case);
 		}else{
 			instance_destroy(event_obj);

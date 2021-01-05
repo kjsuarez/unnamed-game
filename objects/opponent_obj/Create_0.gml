@@ -59,6 +59,7 @@ ds_list_add(statuses, temp_status_inst);
 
 
 //turn order params
+encounter_concluded = false; //has somebody won, this does not mean dialog or card selection has finished
 my_turn = false;
 thinking = 0;
 animating = false;

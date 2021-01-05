@@ -1,7 +1,7 @@
 /// @description poop
 
 if(outro_in_progress == true && active_speech_bubble == false){
-	var script_length = ds_list_size(opponent_obj.intro_script);
+	var script_length = ds_list_size(opponent_obj.outro_script);
 	show_debug_message("Type of outro_index: " + typeof(outro_index));
 	
 	if(outro_index < script_length){
@@ -16,8 +16,15 @@ if(outro_in_progress == true && active_speech_bubble == false){
 		active_speech_bubble = true;
 		outro_index += 1
 	} else {
+		outro_in_progress = false;
+		speak_from_enemy = false;
+		speak_from_card = false;
+		show_debug_message("Creating card_menu instance")
+		var card_menu = instance_create_depth(room_width/2, room_height/2, 1, card_selector_menu_obj);
+		//end_encounter();
+		//or
+		//begin_card_selection();
 		
-		end_encounter();
 	}
 	return
 }
@@ -39,6 +46,7 @@ if(intro_in_progress == true && active_speech_bubble == false){
 		intro_index += 1
 	} else {
 		intro_in_progress = false;
+		
 		deal_hand();
 		global.turn = "player";
 		combat_starting = false; // probably don't need this one

@@ -1,4 +1,7 @@
 function handle_encounter_conclusion(){
+	opponent_obj.encounter_concluded = true;
+	instance_destroy(button_obj)
+	
 	var victor = win_condition_met();
 	if(victor == "player"){
 		if(!is_undefined(opponent_obj.defeat_script)){

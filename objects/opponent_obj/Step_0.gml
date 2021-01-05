@@ -1,7 +1,7 @@
 /// @description Insert description here
 
 
-if(!animating){
+if(!animating && !encounter_concluded){
 	if(global.turn == "opponent_statuses"){
 		var thing_to_look_at = statuses_that_need_handling(self);
 		var second_thing = all_statuses_finished(self);
@@ -26,8 +26,10 @@ if(!animating){
 			handle_enemy_turn()
 			if(is_string(win_condition_met())){
 				handle_encounter_conclusion();
+				return;
 			}
 			thinking = 0;	
+			
 			deal_hand();
 			show_debug_message("hitting next phase at end of enemy turn...")
 			next_phase();

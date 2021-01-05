@@ -1,7 +1,7 @@
 /// @description Insert description here
 
 
-if(global.turn == "player"){
+if(global.turn == "player" && !opponent_obj.encounter_concluded){
 	if(is_string(win_condition_met())){
 		//room_restart();
 		handle_encounter_conclusion();
