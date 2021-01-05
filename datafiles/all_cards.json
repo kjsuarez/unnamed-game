@@ -48,14 +48,6 @@
       "script_params": {"owner": "player"}
     },
     {
-      "cost": 1,
-      "type": "logos",
-      "power": 0,
-      "face_text": "Burden with\nDoubt",
-      "script": "add_doubt_status",
-      "script_params": {}
-    },
-    {
       "cost": 3,
       "type": "pathos",
       "power": 3,

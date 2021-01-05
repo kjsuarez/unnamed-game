@@ -15,7 +15,7 @@ flirt_stat = 1.0;
 friend_stat = 1.0;
 agro_stat = 1.0;
 
-intro_script = [];
+intro_script = ds_list_create();
 
 multplier_x = 992;
 multplier_y = 448;

@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 0,
+      "face_text": "Burden with\nDoubt",
+      "script": "add_doubt_status",
+      "script_params": {}
+    }
+  ]
+}
