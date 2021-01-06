@@ -71,6 +71,7 @@
     {"id":{"name":"speech_bubble_spr","path":"sprites/speech_bubble_spr/speech_bubble_spr.yy",},"order":13,},
     {"id":{"name":"muliplier_token","path":"sprites/muliplier_token/muliplier_token.yy",},"order":4,},
     {"id":{"name":"no_discard_cleanup","path":"scripts/no_discard_cleanup/no_discard_cleanup.yy",},"order":9,},
+    {"id":{"name":"reset_deck","path":"scripts/reset_deck/reset_deck.yy",},"order":15,},
     {"id":{"name":"card","path":"sprites/card/card.yy",},"order":1,},
     {"id":{"name":"initialize_game","path":"scripts/initialize_game/initialize_game.yy",},"order":4,},
     {"id":{"name":"sandbox_obj","path":"objects/sandbox_obj/sandbox_obj.yy",},"order":17,},
@@ -233,6 +234,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"deck.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"x_player_deck.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"work_in_progress_cards.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"viable_cards.json","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.1.542",
