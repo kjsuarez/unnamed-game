@@ -20,6 +20,7 @@ if(outro_in_progress == true && active_speech_bubble == false){
 		speak_from_enemy = false;
 		speak_from_card = false;
 		show_debug_message("Creating card_menu instance")
+		show_debug_message("division happens")
 		var card_menu = instance_create_depth(room_width/2, room_height/2, 1, card_selector_menu_obj);
 		//end_encounter();
 		//or

@@ -11,4 +11,10 @@ function initialize_game(){
 	global.opponent_coor = [1280, 160];
 	global.steps_to_boss = 3;//1;
 	global.total_days = 2;
+	/*
+	global.current_win_event = false;
+	global.current_lose_event = false;
+	global.turn = false;
+	global.turn_number = false;
+	*/
 }
