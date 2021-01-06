@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "save_json_to_file",
+  "name": "save_game",
   "tags": [],
   "resourceType": "GMScript",
 }

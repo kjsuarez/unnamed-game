@@ -2,6 +2,7 @@
 draw_self();
 draw_set_colour(c_black);
 
+show_debug_message("division happens")
 writable_x = x - abs(sprite_width/2) + 20;
 var top_left = [ writable_x, y - abs(sprite_height/2) + 15 ];
 
