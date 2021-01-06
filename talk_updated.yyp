@@ -100,6 +100,7 @@
     {"id":{"name":"do_cards_damage_no_cleanup","path":"scripts/do_cards_damage_no_cleanup/do_cards_damage_no_cleanup.yy",},"order":3,},
     {"id":{"name":"card_selector_menu_obj","path":"objects/card_selector_menu_obj/card_selector_menu_obj.yy",},"order":3,},
     {"id":{"name":"handle_enemy_speech","path":"scripts/handle_enemy_speech/handle_enemy_speech.yy",},"order":2,},
+    {"id":{"name":"save_game","path":"scripts/save_game/save_game.yy",},"order":7,},
     {"id":{"name":"sparkle_spr","path":"sprites/sparkle_spr/sparkle_spr.yy",},"order":9,},
     {"id":{"name":"enemy_attempt_direct_attack","path":"scripts/enemy_attempt_direct_attack/enemy_attempt_direct_attack.yy",},"order":8,},
     {"id":{"name":"arrange_tokens","path":"scripts/arrange_tokens/arrange_tokens.yy",},"order":15,},
