@@ -79,7 +79,7 @@
             {
               "id": "engage-hacker",
               "display_text": "Oh balls.",
-              "responce_text": "Your computer's been hacked and now this motherfucker is holding it hostage. You have litterally no money so your only option is to talk him out of it.",
+              "responce_text": "Your computer's been hacked and now this motherfucker is holding it hostage. You have literally no money so your only option is to talk him out of it.",
               "encounter": "flirty_gerdy_obj",
               "win_event": "persuaded-hacker",
               "lose_event": "annoyed-hacker",
@@ -133,9 +133,18 @@
               "win_event": "won-flamewar",
               "lose_event": "lost-flamewar",
               "flag_needed": false
+            },
+            {
+              "id": "engage-flamewar2",
+              "display_text": "This is silly just ignore him",
+              "responce_text": "I'm sorry I literally can't.",
+              "encounter": "flame_war_obj",
+              "win_event": "won-flamewar",
+              "lose_event": "lost-flamewar",
+              "flag_needed": {"name": "calm", "state": true}
             }
           ],
-          "choice_count": 1
+          "choice_count": 2
         },
         {
           "id": "won-flamewar",

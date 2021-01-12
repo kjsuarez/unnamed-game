@@ -1,5 +1,6 @@
 function handle_new_event(choice_inst){
-	instance_destroy(event_obj);
+	/*
+instance_destroy(event_obj);
 	
 	var choice_1 = instance_create_depth(700, (354 + 50), 10, choice_obj);
 	with(choice_1){
@@ -27,5 +28,6 @@ function handle_new_event(choice_inst){
 		choices = choice_array;
 	}
 	
-	instance_destroy(choice_inst);
+	instance_destroy(choice_inst);	
+	*/
 }

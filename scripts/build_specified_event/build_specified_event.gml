@@ -1,4 +1,5 @@
 function build_specified_event(event_id){
+	
 	var event_hash = load_json("events.json");
 	var contexts_array = event_hash[? "contexts"];
 	// find event whos id matches win_event
@@ -9,7 +10,7 @@ function build_specified_event(event_id){
 		//if(current_context[? "context_id"] == global.game_state_context){
 			var possible_events = current_context[? "events"];
 			for(var j = 0; j < ds_list_size(possible_events); j++;){
-				show_debug_message("event id: " + string(possible_events[| j][? "id"]))
+				show_debug_message("event id: " + string(possible_events[| j][? "id"]) + " vs " + string(event_id))
 				if(possible_events[| j][? "id"] == event_id){
 					var current_event_metadata = possible_events[| j];
 					found = true;

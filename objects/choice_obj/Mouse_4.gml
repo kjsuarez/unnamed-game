@@ -45,6 +45,7 @@ if(!selected){
 		} else { 
 			global.game_state_context = new_context;	
 		}
+		//save_game();
 	} else{
 		if(present_in(self, "encounter")){
 			var win_case = win_event;

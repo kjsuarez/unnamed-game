@@ -45,7 +45,7 @@ ds_list_add(victory_script, x1, x2);
 var x1 = ds_map_create();
 x1[? "speaker"] = opponent_obj;
 x1[? "line"] = "...";
-x1[? "sprite"] = nerd_standin_angry_spr;
+x1[? "sprite"] = nerd_standin_shocked_spr;
 var x2 = ds_map_create();
 x2[? "speaker"] = player_obj;
 x2[? "line"] = "Die mad about it you stain.";	

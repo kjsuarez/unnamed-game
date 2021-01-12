@@ -5,10 +5,15 @@ function choices_for_event_metadata(current_event_metadata){
 	var choice_metadata_array = ds_list_create();
 	var choice_array = ds_list_create();
 	var choice_index = 0;
+	
+	ds_list_shuffle(choice_metadata_array);
 	while(ds_list_size(choice_metadata_array) < current_event_metadata[? "choice_count"]){
 		var possible_choice = current_event_metadata[? "possible_choices"][| choice_index];
 		// disregard possible_choice if flag missing
-		ds_list_add(choice_metadata_array, possible_choice);
+		if(choice_is_legal(possible_choice)) {
+			ds_list_add(choice_metadata_array, possible_choice);
+		}
+		
 		choice_index += 1;
 	}
 	for(var i = 0; i < ds_list_size(choice_metadata_array); i++;){

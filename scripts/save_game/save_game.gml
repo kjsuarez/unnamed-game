@@ -23,7 +23,8 @@ function save_game(){
 	//game_metadata_hash[? "previous_days"] = global.game_state_previous_days
 
 	// game_state_previous_events is safe because it's an array of strings
-	game_metadata_hash[? "previous_events"] = global.game_state_previous_events;
+	ds_map_add_list(game_metadata_hash, "previous_events", global.game_state_previous_events);
+	show_debug_message("size of previous events: " + string(ds_list_size(global.game_state_previous_events)));
 
 	game_metadata_hash[? "step"] = global.game_state_step;
 	game_metadata_hash[? "next_event"] = global.next_event;
