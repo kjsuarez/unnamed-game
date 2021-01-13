@@ -1,6 +1,8 @@
 function choice_is_legal(choice_metadata){
 
 	var legal = true;
+	
+	
 	show_debug_message("Checking if choice " + choice_metadata[? "id"] + " is legal");
 
 	if(choice_metadata[? "flag_needed"] == false){

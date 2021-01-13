@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function choices_for_event_metadata(current_event_metadata){
 
 	var choice_metadata_array = ds_list_create();
@@ -7,14 +5,18 @@ function choices_for_event_metadata(current_event_metadata){
 	var choice_index = 0;
 	
 	ds_list_shuffle(choice_metadata_array);
-	while(ds_list_size(choice_metadata_array) < current_event_metadata[? "choice_count"]){
+
+	while(choice_index < ds_list_size(current_event_metadata[? "possible_choices"])){
 		var possible_choice = current_event_metadata[? "possible_choices"][| choice_index];
 		// disregard possible_choice if flag missing
 		if(choice_is_legal(possible_choice)) {
 			ds_list_add(choice_metadata_array, possible_choice);
 		}
-		
 		choice_index += 1;
+		
+		if(ds_list_size(choice_metadata_array) >= current_event_metadata[? "choice_count"]) {
+			break;
+		}		
 	}
 	for(var i = 0; i < ds_list_size(choice_metadata_array); i++;){
 		var choice_metadata = choice_metadata_array[| i];
@@ -22,7 +24,7 @@ function choices_for_event_metadata(current_event_metadata){
 		with(choice_inst){
 			display_text = choice_metadata[? "display_text"];
 			responce_text = choice_metadata[? "responce_text"];
-				
+
 			if(is_string(choice_metadata[? "new_context"])){
 				new_context = choice_metadata[? "new_context"];
 			}
