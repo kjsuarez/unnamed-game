@@ -4,8 +4,8 @@ function load_json(argument0) {
 	var str = buffer_read(buffer, buffer_string);
 	buffer_delete(buffer);
 
-	show_debug_message("json returned from file: ")
-	show_debug_message(str);
+	//show_debug_message("json returned from file: ")
+	//show_debug_message(str);
 	var hash = json_decode(str);
 
 	return hash;

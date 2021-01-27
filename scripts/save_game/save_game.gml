@@ -23,7 +23,10 @@ function save_game(){
 	//game_metadata_hash[? "previous_days"] = global.game_state_previous_days
 
 	// game_state_previous_events is safe because it's an array of strings
-	ds_map_add_list(game_metadata_hash, "previous_events", global.game_state_previous_events);
+	var temp_prev_events = ds_list_create();
+	ds_list_copy(temp_prev_events, global.game_state_previous_events);
+	
+	ds_map_add_list(game_metadata_hash, "previous_events", temp_prev_events);
 	show_debug_message("size of previous events: " + string(ds_list_size(global.game_state_previous_events)));
 
 	game_metadata_hash[? "step"] = global.game_state_step;
@@ -36,5 +39,12 @@ function save_game(){
 	var game_metadata_json = json_encode(game_metadata_hash);
 	show_debug_message(game_metadata_json);
 	save_json_to_file(save_file_name, game_metadata_json);
-	ds_map_destroy(game_metadata_hash);
+	
+	// deleting game_metadata_hash seems to remove all values stored therin
+	// in this case that means a bunch of important globals.
+	// a solution is to copy the contents of each global to a new temp var
+	// which we do with game_state_previous_events above
+	// for now I'm just not garbage collecting, fuck you.
+	
+	//ds_map_destroy(game_metadata_hash);
 }
