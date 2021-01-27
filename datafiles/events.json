@@ -80,7 +80,7 @@
               "id": "engage-hacker",
               "display_text": "Oh balls.",
               "responce_text": "Your computer's been hacked and now this motherfucker is holding it hostage. You have literally no money so your only option is to talk him out of it.",
-              "encounter": "flirty_gerdy_obj",
+              "encounter": "hacker_obj",
               "win_event": "persuaded-hacker",
               "lose_event": "annoyed-hacker",
               "flag_needed": false

@@ -7,7 +7,7 @@ event_inherited();
 
 var lay_id = layer_get_id("Background");
 var back_id = layer_background_get_id(lay_id);
-layer_background_sprite(back_id, flame_war_background_spr);
+layer_background_sprite(back_id, blue_screen_background_spr);
 layer_background_stretch(back_id, true);
 
 

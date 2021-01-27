@@ -61,6 +61,7 @@
     {"id":{"name":"clean_up_statuses","path":"scripts/clean_up_statuses/clean_up_statuses.yy",},"order":4,},
     {"id":{"name":"event_room","path":"rooms/event_room/event_room.yy",},"order":5,},
     {"id":{"name":"player_attempt_direct_damage","path":"scripts/player_attempt_direct_damage/player_attempt_direct_damage.yy",},"order":9,},
+    {"id":{"name":"blue_screen_background_spr","path":"sprites/blue_screen_background_spr/blue_screen_background_spr.yy",},"order":1,},
     {"id":{"name":"flame_war_background_spr","path":"sprites/flame_war_background_spr/flame_war_background_spr.yy",},"order":0,},
     {"id":{"name":"enemy_multi_hit","path":"scripts/enemy_multi_hit/enemy_multi_hit.yy",},"order":5,},
     {"id":{"name":"event_obj","path":"objects/event_obj/event_obj.yy",},"order":1,},

@@ -6,7 +6,8 @@ function initialize_game(){
 	global.game_state_day = 0;
 	global.game_state_context = false;
 	global.game_state_flags = ds_map_create();
-	//global.game_state_flags[? "calm"] = true;
+	
+	global.game_state_flags[? "calm"] = true;
 	
 	global.context_boss_faced = false;
 	global.game_state_previous_days  = ds_list_create();

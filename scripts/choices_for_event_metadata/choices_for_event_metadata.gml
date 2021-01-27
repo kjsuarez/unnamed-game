@@ -9,7 +9,7 @@ function choices_for_event_metadata(current_event_metadata){
 	while(choice_index < ds_list_size(current_event_metadata[? "possible_choices"])){
 		var possible_choice = current_event_metadata[? "possible_choices"][| choice_index];
 		// disregard possible_choice if flag missing
-		if(choice_is_legal(possible_choice)) {
+		if(true){//choice_is_legal(possible_choice)) {
 			ds_list_add(choice_metadata_array, possible_choice);
 		}
 		choice_index += 1;
@@ -22,6 +22,9 @@ function choices_for_event_metadata(current_event_metadata){
 		var choice_metadata = choice_metadata_array[| i];
 		var choice_inst = instance_create_depth(700, (400 + (80*i)), 10, choice_obj);
 		with(choice_inst){
+			legal = choice_is_legal(choice_metadata);
+			flag_dependent = ds_map_is_map(choice_metadata, "flag_needed");
+			
 			display_text = choice_metadata[? "display_text"];
 			responce_text = choice_metadata[? "responce_text"];
 
