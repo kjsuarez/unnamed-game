@@ -22,19 +22,28 @@ question_behavior_script = "flame_war_act_on_question";
 // intro script
 var x1 = ds_map_create();
 x1[? "speaker"] = opponent_obj;
-x1[? "line"] = "How dare you post a Lucky Charms® meme on this dedicated Captain Crunch® forum!";
-x1[? "sprite"] = nerd_standin_angry_spr;
+x1[? "line"] = "Hey so, you've been hacked.";
+//x1[? "sprite"] = hacker_standin_beginning_spr;
 var x2 = ds_map_create();
 x2[? "speaker"] = player_obj;
-x2[? "line"] = "Your opinios don't matter today and they have never ever mattered.";	
+x2[? "line"] = "Aw man c'mon dude not cool!";
+var x3 = ds_map_create();
+x3[? "speaker"] = opponent_obj;
+x3[? "line"] = "I need 3 grand in bitcoin in the next 7 turns or your computer becomes a paperweight.";
+var x4 = ds_map_create();
+x4[? "speaker"] = player_obj;
+x4[? "line"] = "Joke's on you my guy, I literally have no money. Like that's not even a mechanic in this game.";
+var x5 = ds_map_create();
+x5[? "speaker"] = opponent_obj;
+x5[? "line"] = "I'm not here for meta bullshit pal. Cash only.";
 intro_script = ds_list_create();
-ds_list_add(intro_script, x1, x2);
+ds_list_add(intro_script, x1, x2, x3, x4, x5);
 
 // victory script
 var x1 = ds_map_create();
 x1[? "speaker"] = opponent_obj;
-x1[? "line"] = "this may be the first time I've ever actually won an argument";
-x1[? "sprite"] = nerd_standin_angry_spr;
+x1[? "line"] = "Time's up chumbus.";
+//x1[? "sprite"] = hacker_standin_beginning_spr;
 var x2 = ds_map_create();
 x2[? "speaker"] = player_obj;
 x2[? "line"] = "... fuck.";	
@@ -44,38 +53,28 @@ ds_list_add(victory_script, x1, x2);
 // loss script
 var x1 = ds_map_create();
 x1[? "speaker"] = opponent_obj;
-x1[? "line"] = "...";
-x1[? "sprite"] = nerd_standin_shocked_spr;
+x1[? "line"] = "Jesus christ. FINE.";
+//x1[? "sprite"] = hacker_standin_beginning_spr;
 var x2 = ds_map_create();
 x2[? "speaker"] = player_obj;
-x2[? "line"] = "Die mad about it you stain.";	
+x2[? "line"] = "Oh thank god.";
+var x3 = ds_map_create();
+x3[? "speaker"] = opponent_obj;
+x3[? "line"] = "I won't brick your machine, on the condition that you pay the one currency I know you have in abundance.";
+var x4 = ds_map_create();
+x4[? "speaker"] = player_obj;
+x4[? "line"] = "...";
 defeat_script = ds_list_create();
-ds_list_add(defeat_script, x1, x2);
+ds_list_add(defeat_script, x1, x2, x3, x4);
 
+opponent_name = "Ivan the Hacker";
 
-/*
-
-var x1 = ds_map_create();
-x1[? "speaker"] = opponent_obj;
-x1[? "line"] = "How dare you post a Lucky Charms® meme on this dedicated Captain Crunch® forum!";
-var x2 = ds_map_create();
-x2[? "speaker"] = player_obj;
-x2[? "line"] = "Your opinios don't matter today and they have never ever mattered.";
-	
-var intro_script = ds_list_create();
-ds_list_add(intro_script, x1, x2);
-*/
-
-//
-
-opponent_name = "MILF Whisperer";
-
-logos_stat = 0.8;
-ethos_stat = 1.0;
+logos_stat = 1.0;
+ethos_stat = 2.0;
 pathos_stat = 1.0;
 flirt_stat = 1.3;
 friend_stat = 1.0;
-agro_stat = 1.0;
+agro_stat = 5.0;
 
 image_xscale = 5;
 image_yscale = 5;
