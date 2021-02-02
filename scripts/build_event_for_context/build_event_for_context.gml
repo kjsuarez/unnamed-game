@@ -1,5 +1,6 @@
 function build_event_for_context(context_str){
-
+	
+	show_debug_message("Building event for context: " + context_str)
 
 	var file_path = "events.json";
 	if(file_exists(file_path)){

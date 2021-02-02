@@ -6,5 +6,7 @@ function end_encounter(){
 		global.next_event = encounter_state_obj.lose_event;
 	}
 	
+	show_debug_message("setting next event to: " + global.next_event);
+	
 	room_goto(event_room);
 }
