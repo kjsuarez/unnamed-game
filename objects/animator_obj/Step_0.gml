@@ -8,8 +8,15 @@ switch(action_status){
 		if(animation_script != false){
 			var animationScriptToCall = asset_get_index(animation_script);
 			var animation_response = script_execute(animationScriptToCall, self, script_params)
+			show_debug_message("CHANGE OPPONENT SPRITE TO GETTING HIT")
+			show_debug_message(originating_instance.target)
+			if(originating_instance.target == "opponent"){
+				opponent_obj.sprite_index = opponent_obj.attacked_sprite;
+			}
 			
 			if(animation_response == true){
+				show_debug_message("CHANGE OPPONENT SPRITE TO NORMAL")
+				opponent_obj.sprite_index = opponent_obj.standard_sprite;
 				action_status = "acting"
 			}
 			animation_counter += 1;

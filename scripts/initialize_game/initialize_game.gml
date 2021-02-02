@@ -21,4 +21,6 @@ function initialize_game(){
 	global.current_lose_event = false;
 	global.turn = false;
 	global.turn_number = false;
+	
+	global.pixellari_font = font_add("Pixellari.ttf", 70, true, true, 32, 128);
 }

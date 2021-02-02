@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function save_game(){
+	font_delete(global.pixellari_font);
+	global.pixellari_font = font_add("Pixellari.ttf", 70, true, true, 32, 128);
+	
 	var save_file_name = "game_state.sav";
 	var game_metadata_hash = ds_map_create();
 	//game_variables = ds_list_create();

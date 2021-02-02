@@ -12,6 +12,7 @@ layer_background_stretch(back_id, true);
 
 
 standard_sprite = asset_get_index("nerd_standin_spr");
+attacked_sprite = asset_get_index("nerd_standin_angry_spr");
 
 behavior_script = "flame_war_choose_behavior";
 speech_behavior_script = "flame_war_speech_behavior";
