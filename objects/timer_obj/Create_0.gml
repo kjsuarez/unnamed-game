@@ -1,2 +1,2 @@
 /// @description Insert description here
-count = 3;
+count_down = 3;

@@ -21,6 +21,7 @@ ds_list_add(phases, "resolve_opponent_attack");
 
 combat_starting = false;
 virgin = true;
+alternative_victor = false;
 
 global.turn = false; //"player"
 global.turn_number = 0;

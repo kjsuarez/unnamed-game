@@ -80,3 +80,32 @@ agro_stat = 1.0;
 
 image_xscale = 5;
 image_yscale = 5;
+
+
+
+// statuses
+temp_status_inst = instance_create_depth(initial_status_location[0], initial_status_location[1], -10, status_obj);
+with(temp_status_inst){
+	image_xscale = 2;
+	image_yscale = 2;
+	face_text =  "doubt: " + string(id);
+	token_script_params = ds_map_create();
+	status_script = "experience_doubt";
+	activation_step = "start";
+	script_params = ds_map_create();
+}
+/**
+yyy_status_inst = instance_create_depth(900, 460, -10, status_obj);
+with(yyy_status_inst){
+	image_xscale = 2;
+	image_yscale = 2;
+	face_text =  "doubt again: " + string(id);
+	token_script_params = ds_map_create();
+	status_script = "experience_doubt";
+	activation_step = "start";
+	script_params = ds_map_create();
+}
+**/
+
+ds_list_add(statuses, temp_status_inst);
+//ds_list_add(statuses, yyy_status_inst);

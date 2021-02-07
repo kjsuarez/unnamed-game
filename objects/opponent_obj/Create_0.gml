@@ -29,35 +29,6 @@ tokens = ds_list_create();
 statuses = ds_list_create();
 temp_modifier = 1;
 
-
-// temporary additions
-temp_status_inst = instance_create_depth(initial_status_location[0], initial_status_location[1], -10, status_obj);
-with(temp_status_inst){
-	image_xscale = 2;
-	image_yscale = 2;
-	face_text =  "doubt: " + string(id);
-	token_script_params = ds_map_create();
-	status_script = "experience_doubt";
-	activation_step = "start";
-	script_params = ds_map_create();
-}
-/**
-yyy_status_inst = instance_create_depth(900, 460, -10, status_obj);
-with(yyy_status_inst){
-	image_xscale = 2;
-	image_yscale = 2;
-	face_text =  "doubt again: " + string(id);
-	token_script_params = ds_map_create();
-	status_script = "experience_doubt";
-	activation_step = "start";
-	script_params = ds_map_create();
-}
-**/
-
-ds_list_add(statuses, temp_status_inst);
-//ds_list_add(statuses, yyy_status_inst);
-
-
 //turn order params
 encounter_concluded = false; //has somebody won, this does not mean dialog or card selection has finished
 my_turn = false;

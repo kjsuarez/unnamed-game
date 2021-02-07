@@ -10,6 +10,8 @@ var back_id = layer_background_get_id(lay_id);
 layer_background_sprite(back_id, blue_screen_background_spr);
 layer_background_stretch(back_id, true);
 
+timer_set = false;
+
 
 standard_sprite = asset_get_index("hacker_standin_beginning_spr");
 attacked_sprite = asset_get_index("nerd_standin_spr");
@@ -79,3 +81,16 @@ agro_stat = 5.0;
 
 image_xscale = 5;
 image_yscale = 5;
+
+// statuses
+impatient_status_inst = instance_create_depth(initial_status_location[0], initial_status_location[1], -10, status_obj);
+with(impatient_status_inst){
+	image_xscale = 2;
+	image_yscale = 2;
+	face_text =  "impatient";
+	token_script_params = ds_map_create();
+	status_script = "timer_status";
+	activation_step = "start";
+	script_params = ds_map_create();
+}
+ds_list_add(statuses, impatient_status_inst);

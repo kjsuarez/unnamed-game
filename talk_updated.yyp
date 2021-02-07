@@ -16,6 +16,7 @@
     {"id":{"name":"card_cleanup","path":"scripts/card_cleanup/card_cleanup.yy",},"order":5,},
     {"id":{"name":"choices_for_event_metadata","path":"scripts/choices_for_event_metadata/choices_for_event_metadata.yy",},"order":3,},
     {"id":{"name":"store_damage_taken","path":"scripts/store_damage_taken/store_damage_taken.yy",},"order":14,},
+    {"id":{"name":"timer_status","path":"scripts/timer_status/timer_status.yy",},"order":7,},
     {"id":{"name":"flirty_gerdy_obj","path":"objects/flirty_gerdy_obj/flirty_gerdy_obj.yy",},"order":0,},
     {"id":{"name":"attack_token_with_params","path":"scripts/attack_token_with_params/attack_token_with_params.yy",},"order":16,},
     {"id":{"name":"token","path":"sprites/token/token.yy",},"order":12,},
