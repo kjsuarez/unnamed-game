@@ -1,12 +1,15 @@
 {
   "resources": [
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":0,},
+    {"id":{"name":"klanma_behavior","path":"scripts/klanma_behavior/klanma_behavior.yy",},"order":4,},
     {"id":{"name":"mod_tokens_for","path":"scripts/mod_tokens_for/mod_tokens_for.yy",},"order":1,},
     {"id":{"name":"profile_standin","path":"sprites/profile_standin/profile_standin.yy",},"order":5,},
     {"id":{"name":"next_phase_when_ready","path":"scripts/next_phase_when_ready/next_phase_when_ready.yy",},"order":11,},
     {"id":{"name":"handle_enemy_turn","path":"scripts/handle_enemy_turn/handle_enemy_turn.yy",},"order":0,},
     {"id":{"name":"has_tokens","path":"scripts/has_tokens/has_tokens.yy",},"order":5,},
+    {"id":{"name":"granny_neutral_spr","path":"sprites/granny_neutral_spr/granny_neutral_spr.yy",},"order":19,},
     {"id":{"name":"add_token","path":"scripts/add_token/add_token.yy",},"order":3,},
+    {"id":{"name":"klanma_obj","path":"objects/klanma_obj/klanma_obj.yy",},"order":5,},
     {"id":{"name":"button","path":"sprites/button/button.yy",},"order":0,},
     {"id":{"name":"handle_tokens","path":"scripts/handle_tokens/handle_tokens.yy",},"order":6,},
     {"id":{"name":"status","path":"sprites/status/status.yy",},"order":10,},

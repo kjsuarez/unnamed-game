@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function card_cleanup(card_inst){
 	if(card_inst.outro_status == "ready"){
 		

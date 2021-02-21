@@ -1,8 +1,9 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function multi_hit_attack(card_inst, xxx_params){
 	var target_coor = target_coordinates(opponent_obj, card_inst.target);
-	attack_inst = instance_create_depth(target_coor[0], target_coor[1], -100, animator_obj);
+	var attack_inst = instance_create_depth(target_coor[0], target_coor[1], -100, animator_obj);
+	
+	var temp_string = json_encode(xxx_params);
+	
 	with(attack_inst){
 		sprite_index = slash_spr;
 		animation_script = "resolve_at_animation_end";

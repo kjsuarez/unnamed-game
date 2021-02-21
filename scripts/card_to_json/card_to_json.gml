@@ -16,6 +16,9 @@ function card_to_json(argument0) {
 	if(variable_instance_exists(card_inst, "speech")){
 		metadata[? "speech"] = card_inst.speech;
 	}
+	if(!is_undefined(metadata[? "script_params"][? "counter"])){
+		metadata[? "script_params"][? "counter"] = 0;
+	}
 	return metadata;
 
 

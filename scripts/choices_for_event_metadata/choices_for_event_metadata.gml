@@ -20,7 +20,7 @@ function choices_for_event_metadata(current_event_metadata){
 	}
 	for(var i = 0; i < ds_list_size(choice_metadata_array); i++;){
 		var choice_metadata = choice_metadata_array[| i];
-		var choice_inst = instance_create_depth(700, (400 + (80*i)), 10, choice_obj);
+		var choice_inst = instance_create_depth(700, (400 + (150*i)), 10, choice_obj);
 		with(choice_inst){
 			legal = choice_is_legal(choice_metadata);
 			flag_dependent = ds_map_is_map(choice_metadata, "flag_needed");

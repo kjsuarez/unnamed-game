@@ -181,6 +181,65 @@
           "choice_count": 1
         },
         {
+          "id": "text_with_klanma",
+          "flag_needed": false,
+          "randomly_selectable": true,
+          "repeatable": false,
+          "event_text": "You notice an off looking facebook post. It's from your grandmother and wow is it racist. Much more racist than you remember Gram-Gram being. This is the nice grandmother. Something seems off about this...",
+          "possible_choices": [
+            {
+              "id": "help_klandma",
+              "display_text": "You decide to shoot ol' Grams a dm. Some minutes later she sends you an email explaining she can't figure out how to reply to the mail tweet you sent her. Sure whatever.",
+              "responce_text": "Hey what was up with that thing you posted on FB?",
+              "encounter": "klanma_obj",
+              "win_event": "reached_klanma",
+              "lose_event": "lost_klanma",
+              "flag_needed": false
+            },
+            {
+              "id": "ignore_klandma",
+              "display_text": "It's not my job to explain white privilege to dinosaurs. Ignore it.",
+              "responce_text": "It's confounding how unwilling you are to engage with this game.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 2
+        },
+        {
+          "id": "reached_klanma",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "After long hours of seemingly futile discourse, you actually manage to reach your oldest relative. She promises she'll read the sources you sited before saying goodnight.",
+          "possible_choices": [
+            {
+              "id": "reached_klanma",
+              "display_text": "I'll take it.",
+              "responce_text": "I guess that's the best you could hope for.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
+          "id": "lost_klanma",
+          "no_step": true,
+          "flag_needed": false,
+          "randomly_selectable": false,
+          "repeatable": true,
+          "event_text": "It's no use. The beloved relative you remember is gone. What remains is angry and nervous and alone. Seemingly bereft of both critical thinking and empathy, your grandmother leaves you feeling scared for your own winter years.",
+          "possible_choices": [
+            {
+              "id": "lost_klanma",
+              "display_text": "I thought this game was supposed to be funny.",
+              "responce_text": "I'm sorry.",
+              "flag_needed": false
+            }
+          ],
+          "choice_count": 1
+        },
+        {
           "id": "self-loathing",
           "boss_event": true,
           "flag_needed": false,
