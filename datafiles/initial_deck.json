@@ -12,6 +12,20 @@
         "hits": 3,
         "counter": 0
       }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
     }
   ]
 }
