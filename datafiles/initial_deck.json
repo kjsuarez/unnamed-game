@@ -4,7 +4,7 @@
       "cost": 2,
       "type": "logos",
       "power": 1,
-      "face_text": "do 1 damage 3 times",
+      "face_text": "1do 1 damage 3 times",
       "speech": "\"I'm saying something hurtful\"",
       "needs_target": true,
       "script": "multi_hit_attack",
@@ -17,7 +17,465 @@
       "cost": 3,
       "type": "logos",
       "power": 0,
-      "face_text": "Cast Aspersions",
+      "face_text": "2Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "3do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "4Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "5do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "6Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "7do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "8Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "9do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "10Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "11do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "12Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "13do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "14Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "15do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "16Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "17do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "18Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "19do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "20Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "21do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "22Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "23do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "24Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },{
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "25do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "26Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "27do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "28Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "29do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "30Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "31do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "32Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "33do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "34Cast Aspersions",
+      "speech": "\"Are you sure abut that?\"",
+      "needs_target": false,
+      "script": "add_status_from_card",
+      "script_params": {
+        "face_text": "doubt",
+        "status_script": "experience_doubt",
+        "activation_step": "start"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "logos",
+      "power": 1,
+      "face_text": "35do 1 damage 3 times",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
+      "cost": 3,
+      "type": "logos",
+      "power": 0,
+      "face_text": "36Cast Aspersions",
       "speech": "\"Are you sure abut that?\"",
       "needs_target": false,
       "script": "add_status_from_card",
