@@ -11,11 +11,11 @@ page_size = 12;
 row_size = 4;
 
 card_scale = 7;
-initial_card_location = [room_width/3, room_height/5];
+initial_card_location = [room_width/3, (room_height/5) + 20];
 var card_length = 150;
 var card_height = sprite_get_height(card) * card_scale;
 x_offset = card_length + 10;
-y_offset = card_height + 10;
+y_offset = card_height + 30;
 display_page = ds_list_create();
 
 var deck_path = "deck.json";
@@ -32,17 +32,6 @@ var size_of_actual_deck_obj = ds_list_size(deck_obj.deck_array);
 var number_of_cards_not_in_hand_or_discard = ds_list_size(cards_not_in_hand_or_discard);
 
 total_number_of_pages = ceil(number_of_cards_not_in_hand_or_discard / page_size);
-
-/*
-I have a deck of cards
-I have a number of cards I intend to view at any one time (page_size)
-I have a page_number and a page_index
-On key press,
-	I draw cards from deck at index ((page_number * page_size) + page_index) of deck
-	I increment page_index
-	I continue as long as my deck index is < deck_size && page_index < page_size
-
-*/
 
 
 var deck_index = ((page_number * page_size) + page_index)

@@ -17,7 +17,7 @@ function event_for_metadata(event_metadata, choices_arry){
 	save_game();
 	show_debug_message("finished saving game");
 	
-	var event_inst = instance_create_depth(500, 254, 11, event_obj);
+	var event_inst = instance_create_depth((room_width/2), (room_height/2), 11, event_obj);
 	with(event_inst){
 		image_xscale = 3;
 		image_yscale = 3;

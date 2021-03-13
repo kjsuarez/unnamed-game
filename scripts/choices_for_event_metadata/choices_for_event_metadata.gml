@@ -19,9 +19,19 @@ function choices_for_event_metadata(current_event_metadata){
 		}		
 	}
 	for(var i = 0; i < ds_list_size(choice_metadata_array); i++;){
+		// the choices size and position should be determined by the number of choices.
+		// y is fixed but x will be evenly distributed across the screen for each choice
+		var desired_width = room_width/ds_list_size(choice_metadata_array)
+		var desired_x_position = (1 + (i * 2)) * (desired_width/2)
+		var desired_width_with_margin = desired_width - 20;
+		var necessary_x_scale = desired_width_with_margin/sprite_get_width(blank_choice_spr);
 		var choice_metadata = choice_metadata_array[| i];
-		var choice_inst = instance_create_depth(700, (400 + (150*i)), 10, choice_obj);
+		//var choice_inst = instance_create_depth(700, (400 + (150*i)), 10, choice_obj);
+		var choice_inst = instance_create_depth(desired_x_position, (550), 10, choice_obj);
 		with(choice_inst){
+			image_xscale = necessary_x_scale;
+			image_yscale = 2
+			
 			legal = choice_is_legal(choice_metadata);
 			flag_dependent = ds_map_is_map(choice_metadata, "flag_needed");
 			
