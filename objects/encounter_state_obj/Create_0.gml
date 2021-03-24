@@ -28,3 +28,7 @@ global.turn_number = 0;
 
 win_event = global.current_win_event;
 lose_event = global.current_lose_event;
+
+// Temp- Opponent starts encounter talking
+dialog_state_obj.intro_in_progress = true;
+	virgin = false;

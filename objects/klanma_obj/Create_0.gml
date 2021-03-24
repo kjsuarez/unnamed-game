@@ -81,13 +81,21 @@ ds_list_add(intro_script, x1, x2);
 //
 
 opponent_name = "Klanma";
-
+/*
 logos_stat = 1.5;
 ethos_stat = 0.2;
 pathos_stat = 0.2;
 flirt_stat = 0.1;
 friend_stat = 0.2;
 agro_stat = 0.1;
+*/
+
+logos_stat = 2;
+ethos_stat = 2;
+pathos_stat = 2;
+flirt_stat = 2;
+friend_stat = 2;
+agro_stat = 2;
 
 image_xscale = 5;
 image_yscale = 5;

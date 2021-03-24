@@ -14,8 +14,12 @@ function enter_encounter(opponent_object, win_case, lose_case){
 	room_instance_add(base_encounter_copy, 128, 896, deck_button_obj);
 	//*/
 	
+	
 	room_instance_add(base_encounter_copy, global.opponent_coor[0], global.opponent_coor[1], opponent_object);
+	
+	
 	room_instance_add(base_encounter_copy, 128, 704, player_obj);
+	
 	global.current_win_event = win_case;
 	global.current_lose_event = lose_case;
 	room_instance_add(base_encounter_copy, 0, 0, encounter_state_obj);

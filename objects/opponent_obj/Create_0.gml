@@ -44,3 +44,8 @@ opponent_name = "Generic Opponent";
 image_xscale = -5.5;
 image_yscale = 6;
 behavior_choice = false;
+
+var opponent_bar = instance_create_depth(x - abs(sprite_width/2) + 30, y + abs(sprite_height/2) - 10, -1, rhetoric_bar_obj);
+with(opponent_bar){
+	owner = opponent_obj;
+}

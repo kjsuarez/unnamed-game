@@ -1,9 +1,5 @@
 /// @description Insert description here
-show_debug_message("attempt to retrieve test data:")
 
-if(file_exists(file_name)){
-	var metadata = load_json(file_name)
-}
-else{
-	show_error("KEVIN ERROR missing file" + file_name, true);
+if(rhetoric_bar_obj.red_hp + rhetoric_bar_obj.blue_hp + rhetoric_bar_obj.green_hp < rhetoric_bar_obj.max_hp){
+	rhetoric_bar_obj.blue_hp += 1;
 }

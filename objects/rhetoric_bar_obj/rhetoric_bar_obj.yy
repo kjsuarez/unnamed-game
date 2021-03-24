@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "deck_icon_spr",
-    "path": "sprites/deck_icon_spr/deck_icon_spr.yy",
+    "name": "rhetoric_bar_spr",
+    "path": "sprites/rhetoric_bar_spr/rhetoric_bar_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"deck_button_obj","path":"objects/deck_button_obj/deck_button_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"deck_button_obj","path":"objects/deck_button_obj/deck_button_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"rhetoric_bar_obj","path":"objects/rhetoric_bar_obj/rhetoric_bar_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"rhetoric_bar_obj","path":"objects/rhetoric_bar_obj/rhetoric_bar_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects/encounter_objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "deck_button_obj",
+  "name": "rhetoric_bar_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

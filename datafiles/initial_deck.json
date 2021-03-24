@@ -2,15 +2,27 @@
   "cards": [
     {
       "cost": 2,
-      "type": "logos",
+      "type": "aggro",
       "power": 1,
-      "face_text": "1do 1 damage 3 times",
+      "face_text": "1 hurl insults",
       "speech": "\"I'm saying something hurtful\"",
       "needs_target": true,
       "script": "multi_hit_attack",
       "script_params": {
         "hits": 3,
         "counter": 0
+      }
+    },
+    {
+      "cost": 1,
+      "type": "ethos",
+      "binary_answer": true,
+      "power": 3,
+      "face_text": "1 damage\nstays in hand",
+      "needs_target": true,
+      "script": "temp_attack",
+      "script_params": {
+        "stays": true
       }
     },
     {
