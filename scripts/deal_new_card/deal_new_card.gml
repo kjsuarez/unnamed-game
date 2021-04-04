@@ -16,6 +16,19 @@ function deal_new_card(inst_x, inst_y, inst_z) {
 		damage = metadata[? "power"];
 		cost = metadata[? "cost"];
 		type = metadata[? "type"];
+		if(type == "aggro"){
+			sprite_index = card_red_spr;
+		} else if(type == "ethos"){
+			sprite_index = card_green_spr;
+		} else if(type == "friend"){
+			sprite_index = card_yellow_spr;
+		} else if(type == "flirt"){
+			sprite_index = card_pink_spr;
+		} else if(type == "pathos"){
+			sprite_index = card_purple_spr;
+		} else {
+			sprite_index = card_blue_spr;
+		}
 		binary_answer = metadata[? "binary_answer"];
 		details = metadata[? "face_text"];
 		script_name = metadata[? "script"];

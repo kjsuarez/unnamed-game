@@ -290,7 +290,23 @@ function klanma_act_on_behavior(current_move){
 		*/
 			
 		default:
-			question_card_execute_with_params(false, false);
+			//question_card_execute_with_params(false, false);
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "hits"] = 3;
+			attack_script_params[? "animators_finished"] = false;
+			if(ds_list_size(player_obj.tokens) > 1){
+				attack_script_params[? "target"] = "player";
+			}else{
+				attack_script_params[? "target"] = "player";
+			}
+			
+			
+			show_debug_message("calling enemymulti_hit from opponent turn")
+			enemy_multi_hit(attack_script_params);
+			
+			//enemy_attack(2);
+			break;
 			break;
 	}
 }

@@ -9,10 +9,14 @@ switch(action_status){
 			var animationScriptToCall = asset_get_index(animation_script);
 			var animation_response = script_execute(animationScriptToCall, self, script_params)
 			show_debug_message("CHANGE OPPONENT SPRITE TO GETTING HIT")
-			show_debug_message(originating_instance.target)
-			if(originating_instance.target == "opponent"){
-				opponent_obj.sprite_index = opponent_obj.attacked_sprite;
+			if variable_instance_exists(originating_instance, "target") {
+				show_debug_message(originating_instance.target)
+				if(originating_instance.target == "opponent"){
+					opponent_obj.sprite_index = opponent_obj.attacked_sprite;
+				}
 			}
+
+
 			
 			if(animation_response == true){
 				show_debug_message("CHANGE OPPONENT SPRITE TO NORMAL")

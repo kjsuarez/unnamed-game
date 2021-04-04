@@ -1,6 +1,64 @@
 {
   "cards": [
     {
+      "cost": 1,
+      "type": "aggro",
+      "binary_answer": true,
+      "power": 1,
+      "face_text": "Snide Comment",
+      "speech": "...Are you done?",
+      "needs_target": false,
+      "script": "temp_attack",
+      "script_params": {}
+    },
+    {
+      "cost": 1,
+      "type": "flirt",
+      "binary_answer": true,
+      "power": 1,
+      "face_text": "Wink at opponent. Does a small amount of flirt damage",
+      "speech": "*Wink*",
+      "needs_target": false,
+      "script": "temp_attack",
+      "script_params": {}
+    },
+    {
+      "cost": 1,
+      "type": "friend",
+      "binary_answer": true,
+      "power": 1,
+      "face_text": "Wave at opponent and and mildly increase friendship",
+      "speech": "*Wink*",
+      "needs_target": false,
+      "script": "temp_attack",
+      "script_params": {}
+    },
+    {
+      "cost": 1,
+      "type": "ethos",
+      "binary_answer": true,
+      "power": 3,
+      "face_text": "1 damage\nstays in hand",
+      "needs_target": true,
+      "script": "temp_attack",
+      "script_params": {
+        "stays": true
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aggro",
+      "power": 1,
+      "face_text": "1 hurl insults",
+      "speech": "\"I'm saying something hurtful\"",
+      "needs_target": true,
+      "script": "multi_hit_attack",
+      "script_params": {
+        "hits": 3,
+        "counter": 0
+      }
+    },
+    {
       "cost": 3,
       "type": "ethos",
       "power": 0,
