@@ -47,3 +47,5 @@ while(deck_index < number_of_cards_not_in_hand_or_discard - 1 && ds_list_size(di
 	deck_index = ((page_number * page_size) + page_index);
 }
 
+var top_right_coor = top_right_of_instance(self);
+var close_button = instance_create_depth(top_right_coor[0], top_right_coor[1], -101, deck_display_close_button_obj);

@@ -15,3 +15,7 @@ function present_in(inst, variable_str){
 function top_left_of_instance(instance){
 	return [instance.x - abs(instance.sprite_width/2), instance.y - abs(instance.sprite_height/2)]
 }
+
+function top_right_of_instance(instance){
+	return [instance.x + abs(instance.sprite_width/2), instance.y - abs(instance.sprite_height/2)]
+}
