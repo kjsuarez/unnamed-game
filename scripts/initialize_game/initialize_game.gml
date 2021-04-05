@@ -13,6 +13,7 @@ function initialize_game(){
 	global.game_state_previous_days  = ds_list_create();
 	global.game_state_previous_events  = ds_list_create();
 	global.next_event = false;
+	global.player_coor = [128, 604];
 	global.opponent_coor = [1280, 160];
 	global.steps_to_boss = 3;//1;
 	global.total_days = 2;

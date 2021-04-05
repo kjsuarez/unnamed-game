@@ -33,5 +33,10 @@ y_offset = -60;
 name_str = "player";
 standard_sprite = asset_get_index("profile_standin");
 
-image_xscale = 5.5;
+image_xscale = 6;
 image_yscale = 6;
+
+var player_bar = instance_create_depth(x - abs(sprite_width/2) + 70, y + abs(sprite_height/2) + 20, -1, rhetoric_bar_obj);
+with(player_bar){
+	owner = player_obj;
+}

@@ -41,7 +41,7 @@ standard_sprite = asset_get_index("profile_standin");
 
 opponent_name = "Generic Opponent";
 
-image_xscale = -5.5;
+image_xscale = -6;
 image_yscale = 6;
 behavior_choice = false;
 

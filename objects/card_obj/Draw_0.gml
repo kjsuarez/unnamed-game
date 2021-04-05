@@ -7,4 +7,4 @@ var top_left = [ writable_x, y - abs(sprite_height/2) + 15 ];
 
 draw_text(top_left[0], top_left[1], cost);
 draw_text_ext(writable_x, y, details, 20, sprite_width - 20);
-draw_text(x, y + 45, id);
+draw_text(x, y + abs(sprite_height/2) - 15, id);

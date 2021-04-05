@@ -2,16 +2,14 @@
   "cards": [
     {
       "cost": 1,
-      "type": "logos",
-      "power": 0,
-      "face_text": "cheap token",
-      "script": "add_token_from_card",
-      "script_params": {
-        "token_text": "poop token",
-        "animation_script": "sparkle_once",
-        "turn_script": "logos_heal",
-        "time_to_live": 3
-      }
+      "type": "friend",
+      "binary_answer": true,
+      "power": 1,
+      "face_text": "Wave at opponent and and mildly increase friendship",
+      "speech": "Hi!",
+      "needs_target": false,
+      "script": "temp_attack",
+      "script_params": {}
     },
     {
       "cost": 1,
@@ -43,21 +41,37 @@
     },
     {
       "cost": 1,
+      "type": "aggro",
+      "binary_answer": true,
+      "power": 3,
+      "face_text": "Overtly Rude",
+      "speech": "You're an idiot.",
+      "needs_target": false,
+      "script": "hot_and_cold",
+      "script_params": {
+        "heal_type": "friend",
+        "heal_value": 1
+      }
+    },
+    {
+      "cost": 1,
+      "type": "logos",
+      "power": 0,
+      "face_text": "cheap token",
+      "script": "add_token_from_card",
+      "script_params": {
+        "token_text": "poop token",
+        "animation_script": "sparkle_once",
+        "turn_script": "logos_heal",
+        "time_to_live": 3
+      }
+    },
+    {
+      "cost": 1,
       "type": "flirt",
       "binary_answer": true,
       "power": 1,
       "face_text": "Wink at opponent. Does a small amount of flirt damage",
-      "speech": "*Wink*",
-      "needs_target": false,
-      "script": "temp_attack",
-      "script_params": {}
-    },
-    {
-      "cost": 1,
-      "type": "friend",
-      "binary_answer": true,
-      "power": 1,
-      "face_text": "Wave at opponent and and mildly increase friendship",
       "speech": "*Wink*",
       "needs_target": false,
       "script": "temp_attack",
