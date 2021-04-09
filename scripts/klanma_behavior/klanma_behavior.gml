@@ -207,20 +207,130 @@ function klanma_act_on_behavior(current_move){
 	
 	switch (current_move)
     {	
+		case "res_1_1":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_1_2":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_1_3":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_2_1":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_2_2":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+		
+		case "res_2_3":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_3_1":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_3_2":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_3_3":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_3_4":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+			
+		case "res_3_5":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+		
+		case "res_3_6":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+		break;
+		
+		case "res_3_7":
+			var attack_script_params = ds_map_create();
+			attack_script_params[? "power"] = 2;
+			attack_script_params[? "cleanup_script"] = "next_phase_with_params";
+			var target = target_coordinates(player_obj, "stack");
+			attack_script_params[? "target"] = "stack";
+			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
+			break;
 		case "res_3_8":
 			encounter_state_obj.alternative_victor = "player";
 			handle_encounter_conclusion();
 			
 			break;
+
 		
 		/*
-		case "drink_resp_yes":
-			var attack_script_params = ds_map_create();
-			attack_script_params[? "power"] = 2;
-			attack_script_params[? "cleanup_script"] = "question_card_execute_with_params";
-			var target = target_coordinates(player_obj, "stack");
-			create_animator([target[0], target[1]], slash_spr, "resolve_at_animation_end", "enemy_attack_with_params", opponent_obj, attack_script_params);
-			break;
 		case "drink_resp_no":
 			question_card_execute_with_params(false, false);
 			break;

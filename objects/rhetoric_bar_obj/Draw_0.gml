@@ -93,9 +93,3 @@ if(green_hp > 0){
 */
 
 draw_self();
-
-draw_text_ext(50, 50, "total sprite width = " + string(abs(sprite_width)), 20, 300);
-
-draw_text_ext(50, 100, "bbox left = " + string(bbox_left), 20, 300);
-
-draw_text_ext(50, 150, "bbox right = " + string(bbox_right), 20, 300);
