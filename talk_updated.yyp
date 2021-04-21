@@ -107,6 +107,7 @@
     {"id":{"name":"opposite_of_combatant","path":"scripts/opposite_of_combatant/opposite_of_combatant.yy",},"order":13,},
     {"id":{"name":"cleanup_token","path":"scripts/cleanup_token/cleanup_token.yy",},"order":13,},
     {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"order":0,},
+    {"id":{"name":"bedroom_background_spr","path":"sprites/bedroom_background_spr/bedroom_background_spr.yy",},"order":2,},
     {"id":{"name":"all_statuses_finished","path":"scripts/all_statuses_finished/all_statuses_finished.yy",},"order":5,},
     {"id":{"name":"start_menu_obj","path":"objects/start_menu_obj/start_menu_obj.yy",},"order":0,},
     {"id":{"name":"question_card_execute_with_params","path":"scripts/question_card_execute_with_params/question_card_execute_with_params.yy",},"order":15,},
@@ -208,9 +209,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"start_menu_room","path":"rooms/start_menu_room/start_menu_room.yy",},},
     {"roomId":{"name":"encounter_debugger","path":"rooms/encounter_debugger/encounter_debugger.yy",},},
     {"roomId":{"name":"sandbox","path":"rooms/sandbox/sandbox.yy",},},
-    {"roomId":{"name":"start_menu_room","path":"rooms/start_menu_room/start_menu_room.yy",},},
     {"roomId":{"name":"event_room","path":"rooms/event_room/event_room.yy",},},
     {"roomId":{"name":"map_room","path":"rooms/map_room/map_room.yy",},},
     {"roomId":{"name":"base_encounter_room","path":"rooms/base_encounter_room/base_encounter_room.yy",},},
@@ -280,7 +281,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"long_deck.json","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "talk_updated",

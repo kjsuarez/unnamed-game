@@ -6,6 +6,7 @@
       "events": [
         {
           "id": "start-room",
+          "background": "bedroom_background_spr",
           "no_step": true,
           "flag_needed": false,
           "randomly_selectable": true,
@@ -182,6 +183,7 @@
         },
         {
           "id": "text_with_klanma",
+          "background": "bedroom_background_spr",
           "flag_needed": false,
           "randomly_selectable": true,
           "repeatable": false,
